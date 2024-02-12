@@ -1,0 +1,78 @@
+.offlineservicecontainer {
+  margin-bottom: 200px;
+}
+.offlineservicetitle {
+  color: #000;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 68px;
+  margin-top: 68px;
+}
+
+.offlineservicecontent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media only screen and (max-width: 768px) {
+  .offlineservicecontainer {
+    margin-bottom: 60px;
+  }
+  .offlineservicecontent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .offlineservicetitle {
+    font-size: 16px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+  }
+}
+
+.offlineservicecard {
+  width: 295px;
+  height: 302px;
+  margin: auto;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.servicecardimg {
+  width: 295px;
+  height: 220px;
+}
+
+.servicecardtitle {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 12px 25px 12px 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .offlineservicecard {
+    width: 112px;
+    height: 114px;
+    margin: auto;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 11px;
+  }
+
+  .servicecardimg {
+    width: 112px;
+    height: 85px;
+  }
+
+  .servicecardtitle {
+    font-size: 8px;
+    margin: 5px 10px 6px 10px;
+  }
+}

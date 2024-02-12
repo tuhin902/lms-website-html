@@ -1,0 +1,616 @@
+.container {
+  background: #e4d9ff;
+  padding-top: 110px;
+  padding-bottom: 50px;
+}
+
+.desktitlecontainer {
+  height: 121px;
+  background: #ffe5ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 47px;
+}
+
+.desktitle {
+  color: #4b4e6d;
+  font-family: Kantumruy;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.createpost {
+  width: 1030px;
+  height: 300px !important;
+  margin: auto;
+  border-radius: 20px;
+  background: #ffe5ec;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.posttop {
+  display: flex;
+  gap: 34px;
+  padding-top: 61px;
+  margin-left: 57px;
+}
+
+.postimg {
+  width: 74px;
+  height: 74px;
+}
+
+.psotinput {
+  width: 780px;
+  height: 74px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #d9d9d9;
+  padding-left: 49px;
+}
+
+.psotinput::placeholder {
+  color: #fffcfc;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.postbottom {
+  display: flex;
+  justify-content: end;
+  margin-top: 34px;
+}
+
+.galleryicon {
+  width: 50px;
+  height: 50px;
+}
+/* .gallerytext {
+  position: absolute;
+  top: 16px;
+  right: -100px;
+} */
+.creatbutton {
+  width: 171px;
+  height: 42px;
+  border-radius: 10px;
+  background: #7435de;
+  color: #fff;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 120px;
+  margin-right: 105px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+
+  .desktitlecontainer {
+    height: 31px;
+    margin-bottom: 9px;
+  }
+
+  .desktitle {
+    font-size: 16px;
+  }
+
+  .createpost {
+    width: 100%;
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5px;
+    border-radius: 20px;
+  }
+
+  .posttop {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding-top: 10px;
+    margin-left: 0px;
+  }
+
+  .postimg {
+    width: 46px;
+    height: 46px;
+  }
+
+  .psotinput {
+    width: 309px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 0px;
+  }
+
+  .psotinput::placeholder {
+    font-size: 12px;
+  }
+
+  .postbottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+  }
+
+  .galleryicon {
+    width: 20px;
+    height: 20px;
+    margin-left: 55px;
+  }
+
+  .gallerytext {
+    position: absolute;
+    top: 3px;
+    right: -63px;
+    font-size: 10px;
+  }
+  .creatbutton {
+    width: 90px;
+    height: 18px;
+    font-size: 10px;
+    margin-left: 0px;
+    margin-right: 67px;
+  }
+}
+
+/* post container css start from here  */
+
+.postcontainer {
+  width: 1030px;
+  margin: auto;
+  border-radius: 20px;
+  background: #ffe5ec;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 27px;
+  padding-bottom: 50px;
+}
+
+.allposttext {
+  color: #4b4e6d;
+  font-family: Kantumruy;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  padding-top: 20px;
+  margin-left: 56px;
+}
+
+.topdetails {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  margin-left: 56px;
+  margin-top: 71px;
+}
+.userimg {
+  width: 74px;
+  height: 74px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.username {
+  color: #263238;
+  font-family: Kantumruy;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.active {
+  color: #263238;
+  font-family: Kantumruy;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+
+.clockicon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.middledetails {
+  margin-top: 30px;
+  margin-left: 56px;
+  margin-right: 56px;
+  margin-bottom: 15px;
+}
+
+.postbottom {
+  display: flex;
+  gap: 10px;
+  padding-right: 30px;
+}
+
+.commentcontainer {
+  display: flex;
+  gap: 8px;
+}
+.callendercontainer {
+  display: flex;
+  gap: 8px;
+}
+
+.problemname {
+  color: #000;
+  font-family: Kantumruy;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.problemdes {
+  width: 868px;
+  height: 100px;
+  color: #000;
+  text-align: justify;
+  font-family: Kantumruy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.commenticon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.commenttext {
+  color: #263238;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.callendertext {
+  color: #263238;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.callendericon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.bottomborder {
+  width: 915px;
+  height: 3px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.54);
+}
+@media only screen and (max-width: 768px) {
+  .postcontainer {
+    width: 100%;
+    height: 384px;
+    border-radius: 10px;
+    margin-top: 11px;
+  }
+
+  .allposttext {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 0px;
+  }
+
+  .topdetails {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    margin-left: 25px;
+    margin-top: 13px;
+  }
+  .userimg {
+    width: 38px;
+    height: 38px;
+  }
+
+  .username {
+    font-size: 12px;
+  }
+
+  .active {
+    font-size: 10px;
+  }
+
+  .clockicon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .middledetails {
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+  }
+
+  .postbottom {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .commentcontainer {
+    display: flex;
+    gap: 4px;
+  }
+  .callendercontainer {
+    display: flex;
+    gap: 4px;
+  }
+
+  .problemname {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  .problemdes {
+    width: 308px;
+    height: 54px;
+    font-size: 10px;
+  }
+
+  .commenticon {
+    width: 14px;
+    height: 14px;
+  }
+  .commenttext {
+    font-size: 8px;
+  }
+
+  .callendertext {
+    font-size: 8px;
+  }
+
+  .callendericon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .bottomborder {
+    width: 380px;
+    height: 2px;
+  }
+}
+
+/* post container css ends  here  */
+
+/*create post  css starts from  here  */
+.createpostcontainer {
+  width: 1030px;
+  height: 850px;
+  margin: auto;
+  border-radius: 20px;
+  background: #ffe5ec;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 27px;
+}
+.createposttext {
+  color: #4b4e6d;
+  margin-left: 56px;
+  padding-top: 20px;
+  font-family: Kantumruy;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.newpost {
+  padding-left: 56px;
+  padding-top: 13px;
+}
+.newpost div {
+  margin-bottom: 27px;
+}
+.newpost label {
+  color: #37474f;
+  font-family: Kantumruy;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.newpost input {
+  width: 783px;
+  height: 57px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  padding-left: 28px;
+  border: none;
+}
+.newpost input::placeholder {
+  color: #fffcfc;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.newpost textarea {
+  width: 783px;
+  height: 158px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  padding-top: 23px;
+  padding-left: 28px;
+  border: none;
+}
+.newpost textarea::placeholder {
+  color: #fffcfc;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.nameidinput {
+  display: flex;
+  gap: 57px;
+}
+.nameidinput input {
+  width: 363px;
+  height: 57px;
+  flex-shrink: 0;
+  border: none;
+}
+
+.creatpostbottom {
+  display: flex;
+  justify-content: space-between;
+}
+.galleryicon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.gallerytext {
+  position: absolute;
+  top: 14px;
+  right: -100px;
+}
+
+.submitbtn {
+  width: 171px;
+  height: 42px;
+  border-radius: 10px;
+  background: #7435de;
+  color: #fff;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 200px;
+  border: none;
+}
+.formbottomtext {
+  color: #37474f;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+@media only screen and (max-width: 768px) {
+  .createpostcontainer {
+    width: 100%;
+    height: 557px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .createposttext {
+    text-align: center;
+    margin-left: 0px;
+    padding-top: 10px;
+    font-size: 15px;
+  }
+
+  .newpost {
+    padding-left: 27px;
+    padding-top: 27px;
+  }
+  .newpost div {
+    margin-bottom: 14px;
+  }
+  .newpost label {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
+  .newpost input {
+    width: 309px;
+    height: 30px;
+    padding-left: 12px;
+  }
+  .newpost input::placeholder {
+    font-size: 12px;
+  }
+
+  .newpost textarea {
+    width: 309px;
+    height: 104px;
+    padding-top: 14px;
+    padding-left: 27px;
+  }
+  .newpost textarea::placeholder {
+    font-size: 12px;
+  }
+
+  .nameidinput {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .nameidinput input {
+    width: 309px;
+    height: 30px;
+  }
+  .creatpostbottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  .galleryicon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .gallerytext {
+    position: absolute;
+    top: 4px;
+    right: -60px;
+    font-size: 10px;
+  }
+
+  .submitbtn {
+    width: 90px;
+    height: 18px;
+    border-radius: 10px;
+    font-size: 10px;
+    margin-right: 100px;
+  }
+  .formbottomtext {
+    font-size: 8px;
+    text-align: center;
+  }
+}
+
+/*create post  css ends  here  */

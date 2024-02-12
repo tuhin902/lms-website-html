@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/ourcourses.css">
+    <link rel="stylesheet" href="./css/aboutus.css">
+    <link rel="stylesheet" href="./css/offlineservices.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- this is navbar  -->
+    <nav>
+        <div class="navcontainer">
+            <div class="logo">
+                <img src="/assets/logo/logo1.png" alt="logo" width={50} height={50} />
+                <span>GMIT</span>
+            </div>
+            <div class="linkscontainer">
+                <!-- <Links /> -->
+                <div class="links">
+                    <a href="/">Home</a>
+                    <a href="#ourcourses">Our Courses</a>
+                    <a href="#aboutus">About Us</a>
+                    <a href="#offlineservice">Offline Service</a>
+                    <a href="./review.html">Review</a>
+                    <a href="./helpdesk.html">Help Desk</a>
+                    <a href="/mycourses.html">My Courses</a>
+                </div>
+            </div>
+            <div class="buttons">
+
+                <!-- <div class="afterlogin">
+                    <span class="avatar"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 29 29" fill="none">
+                        <circle cx="14.8672" cy="14.0606" r="14.0606" fill="#2D094F" />
+                        <path d="M5.49365 4.68677H24.5328V23.7259H5.49365V4.68677Z" fill="white" fill-opacity="0.01" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.0134 7.06658C13.699 7.06658 12.6335 8.13209 12.6335 9.44647C12.6335 10.7609 13.699 11.8264 15.0134 11.8264C16.3277 11.8264 17.3933 10.7609 17.3933 9.44647C17.3933 8.13209 16.3277 7.06658 15.0134 7.06658ZM11.0469 9.44647C11.0469 7.25584 12.8227 5.47998 15.0134 5.47998C17.204 5.47998 18.9799 7.25584 18.9799 9.44647C18.9799 11.6371 17.204 13.413 15.0134 13.413C12.8227 13.413 11.0469 11.6371 11.0469 9.44647Z"
+                            fill="#D1EDDE" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.08008 22.1395C7.08008 17.7583 10.6318 14.2065 15.0131 14.2065C19.3943 14.2065 22.946 17.7583 22.946 22.1395C22.946 22.5777 22.5909 22.9328 22.1527 22.9328C21.7146 22.9328 21.3594 22.5777 21.3594 22.1395C21.3594 18.6345 18.5181 15.7931 15.0131 15.7931C11.5081 15.7931 8.66667 18.6345 8.66667 22.1395C8.66667 22.5777 8.3115 22.9328 7.87338 22.9328C7.43525 22.9328 7.08008 22.5777 7.08008 22.1395Z"
+                            fill="#D1EDDE" />
+                    </svg>
+                    <button class="login">Logout</button>
+                </div> -->
+
+                <!--------------------------
+                     before login interface 
+                    -------------------------->
+
+                <div><a href="/login">
+                        <button class="login">Login</button>
+                    </a>
+                    <a href="/register">
+                        <button class="signup">Sign Up</button>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <!---------------
+                 for mobile nav menubaricon 
+                ----------------->
+
+            <img class="menuButton" src="/assets/menu/menu.png" alt="" />
+
+            <!--------------------
+                 after click on menubutton this will show to the mobile nav 
+            -------------- -->
+
+
+            <!-- <div class="mobileNav">
+                <div class="mobileLinks">
+                    <a href="/">Home</a>
+                    <a href="/ourcourses">Our Courses</a>
+                    <a href="/aboutus">About Us</a>
+                    <a href="/offlineservice">Offline Service</a>
+                    <a href="/review">Review</a>
+                    <a href="/helpdesk">Help Desk</a>
+                    <a href="/mycourse">My Course</a>
+                </div>
+                <div class="mobileButtons">
+                    <div class="mobileafterlogin">
+                        <span class="avatar"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 29 29" fill="none">
+                            <circle cx="14.8672" cy="14.0606" r="14.0606" fill="#2D094F" />
+                            <path d="M5.49365 4.68677H24.5328V23.7259H5.49365V4.68677Z" fill="white"
+                                fill-opacity="0.01" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.0134 7.06658C13.699 7.06658 12.6335 8.13209 12.6335 9.44647C12.6335 10.7609 13.699 11.8264 15.0134 11.8264C16.3277 11.8264 17.3933 10.7609 17.3933 9.44647C17.3933 8.13209 16.3277 7.06658 15.0134 7.06658ZM11.0469 9.44647C11.0469 7.25584 12.8227 5.47998 15.0134 5.47998C17.204 5.47998 18.9799 7.25584 18.9799 9.44647C18.9799 11.6371 17.204 13.413 15.0134 13.413C12.8227 13.413 11.0469 11.6371 11.0469 9.44647Z"
+                                fill="#D1EDDE" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7.08008 22.1395C7.08008 17.7583 10.6318 14.2065 15.0131 14.2065C19.3943 14.2065 22.946 17.7583 22.946 22.1395C22.946 22.5777 22.5909 22.9328 22.1527 22.9328C21.7146 22.9328 21.3594 22.5777 21.3594 22.1395C21.3594 18.6345 18.5181 15.7931 15.0131 15.7931C11.5081 15.7931 8.66667 18.6345 8.66667 22.1395C8.66667 22.5777 8.3115 22.9328 7.87338 22.9328C7.43525 22.9328 7.08008 22.5777 7.08008 22.1395Z"
+                                fill="#D1EDDE" />
+                        </svg>
+                        <a href="/">
+                            <button class="login">Logout</button>
+                        </a>
+                    </div>
+
+
+                    ------------------
+                             before login in mobile 
+                        ------------------
+
+                    <a href="/login">
+                        <button class="login">Login</button>
+                    </a>
+                    <a href="/register">
+                        <button class="signup">Sign Up</button>
+                    </a>
+
+
+                </div>
+            </div> -->
+
+
+        </div>
+    </nav>
+
+
+    <main>
+
+        <!----------------
+             top bannner section  starts from here
+        ------------------>
+        <section class="bannersection">
+            <div class="bannercontainer">
+                <img src="/assets/topbanner/topshadow.svg" fill class="topshadow" alt="" />
+                <div class="bannertexts">
+                    <h2 class="bannertitle">
+                        Your <span>Title</span>
+                    </h2>
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                        aperiam harum consequatur. Quo eveniet iusto natus fugit cum
+                        quibusdam pariatur.
+                    </p>
+                    <button class="readbtn">Read More</button>
+                </div>
+            </div>
+            <div class="secondBanner"></div>
+
+        </section>
+
+        <!----------------
+             top bannner section  ends  here
+        ------------------>
+
+
+        <!------------------
+             Our Courses section starts from here 
+            ------------------------------->
+
+        <section id="ourcourses">
+
+            <div class="ourcoursescontainer">
+                <div class="ourcoursestitle">
+                    <h2 class="ourcourses">Our Courses</h2>
+                    <select class="category" name="category">
+                        <option selected>Category</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <!-- card container start from here -->
+                <div class="ourcoursescontent">
+                    <!-- card starts from here  -->
+                    <a href="/mycourse.html">
+                        <div class="ourcoursescard">
+                            <img src="/assets/coursepic/courseimg1.png" class="ourcoursescardcardImg" alt="" />
+                            <div class="cardbody">
+                                <h3 class="ourcoursescardtitle">Graphics Design</h3>
+                                <div class="ourcoursescarddes">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                        diam nonummy nibh
+                                    </p>
+                                    <img src="/assets/coursepic/locksvg.svg" alt="" width={36} height={36} />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- card ends  here  -->
+
+                    <!-- card starts from here  -->
+                    <a href="/mycourse.html">
+                        <div class="ourcoursescard">
+                            <img src="/assets/coursepic/courseimg1.png" class="ourcoursescardcardImg" alt="" />
+                            <div class="cardbody">
+                                <h3 class="ourcoursescardtitle">Graphics Design</h3>
+                                <div class="ourcoursescarddes">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                        diam nonummy nibh
+                                    </p>
+                                    <img src="/assets/coursepic/locksvg.svg" alt="" width={36} height={36} />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- card ends  here  -->
+
+                    <!-- card starts from here  -->
+                    <a href="/mycourse.html">
+                        <div class="ourcoursescard">
+                            <img src="/assets/coursepic/courseimg1.png" class="ourcoursescardcardImg" alt="" />
+                            <div class="cardbody">
+                                <h3 class="ourcoursescardtitle">Graphics Design</h3>
+                                <div class="ourcoursescarddes">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                        diam nonummy nibh
+                                    </p>
+                                    <img src="/assets/coursepic/locksvg.svg" alt="" width={36} height={36} />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- card ends  here  -->
+
+                    <!-- card starts from here  -->
+                    <a href="/mycourse.html">
+                        <div class="ourcoursescard">
+                            <img src="/assets/coursepic/courseimg1.png" class="ourcoursescardcardImg" alt="" />
+                            <div class="cardbody">
+                                <h3 class="ourcoursescardtitle">Graphics Design</h3>
+                                <div class="ourcoursescarddes">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                        diam nonummy nibh
+                                    </p>
+                                    <img src="/assets/coursepic/locksvg.svg" alt="" width={36} height={36} />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- card ends  here  -->
+
+
+                </div>
+            </div>
+
+        </section>
+
+        <!------------------
+             Our Courses section ends  here 
+            ------------------------------->
+
+
+
+        <!-- Aboutus starts from here  -->
+        <section id="aboutus">
+            <div>
+                <h2 class="aboutTitle">About Us</h2>
+                <div class="aboutcontainer">
+                    <h3 class="missionTitle">Our Mission</h3>
+                    <div class="abouttop">
+                        <div class="topText">
+                            <p class="topDes">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry&apos;s standard dummy
+                                text ever since the 1500s, when an unknown printer took a galley
+                                of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into
+                                electronic typesetting, remaining essentially unchanged. It was
+                                popularised in the 1960s with the release of Letraset sheets
+                                containing Lorem Ipsum passages, and more recently with desktop
+                                publishing software like Aldus PageMaker including versions of
+                                Lorem Ipsum.
+                            </p>
+                            <button class="readtopButton">Read More</button>
+                        </div>
+                        <div>
+                            <img class="topimg" src="/assets/aboutus/aboutrightimg.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="aboutMiddle">
+                        <span class="middleFirst">Who we are</span>
+                        <span>Our Work</span>
+                        <span>Business Services</span>
+                        <span>Our Staff</span>
+                    </div>
+
+                    <div class="aboutBottom">
+                        <div class="aboutCard">
+                            <div>
+                                <img class="bottomcardimg" src="/assets/aboutus/aboutcard1.png" alt="" />
+                            </div>
+                            <h2 class="bottomTitle">Title</h2>
+                            <p class="bottomdesc">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                            </p>
+                        </div>
+                        <div class="aboutCard">
+                            <div>
+                                <img class="bottomcardimg" src="/assets/aboutus/aboutcard1.png" alt="" />
+                            </div>
+                            <h2 class="bottomTitle">Title</h2>
+                            <p class="bottomdesc">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                            </p>
+                        </div>
+                        <div class="aboutCard">
+                            <div>
+                                <img class="bottomcardimg" src="/assets/aboutus/aboutcard1.png" alt="" />
+                            </div>
+                            <h2 class="bottomTitle">Title</h2>
+                            <p class="bottomdesc">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aboutus ends here -->
+
+
+        <!-- Offline services starts from here -->
+        <section id="offlineservice">
+            <div class="offlineservicecontainer">
+                <h2 class="offlineservicetitle">Offline Services</h2>
+                <div class="offlineservicecontent">
+                    <!-- service card starts from here -->
+                    <a href="/singleofflineservice.html">
+                        <div class="offlineservicecard">
+                            <div>
+                                <img class="servicecardimg" src="/assets/offlineservice/service1.png" class="cardImg"
+                                    alt="" />
+                            </div>
+                            <div class="servicecardtitle">
+                                <h3>Offline Course</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- service card ends  here -->
+                    
+                    <!-- service card starts from here -->
+                    <a href="/singleofflineservice.html">
+                        <div class="offlineservicecard">
+                            <div>
+                                <img class="servicecardimg" src="/assets/offlineservice/service1.png" class="cardImg"
+                                    alt="" />
+                            </div>
+                            <div class="servicecardtitle">
+                                <h3>Offline Course</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- service card ends  here -->
+                    
+                    <!-- service card starts from here -->
+                    <a href="/singleofflineservice.html">
+                        <div class="offlineservicecard">
+                            <div>
+                                <img class="servicecardimg" src="/assets/offlineservice/service1.png" class="cardImg"
+                                    alt="" />
+                            </div>
+                            <div class="servicecardtitle">
+                                <h3>Offline Course</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- service card ends  here -->
+                    
+                    <!-- service card starts from here -->
+                    <a href="/singleofflineservice.html">
+                        <div class="offlineservicecard">
+                            <div>
+                                <img class="servicecardimg" src="/assets/offlineservice/service1.png" class="cardImg"
+                                    alt="" />
+                            </div>
+                            <div class="servicecardtitle">
+                                <h3>Offline Course</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- service card ends  here -->
+                    
+                </div>
+            </div>
+
+        </section>
+        <!-- Offline services ends  here -->
+
+
+        <!-- Contact us  starts  here -->
+        <section id="#contactus">
+            <div>
+                <div class="contactcontainer">
+                    <div class="contacttitle">
+                        <h2 class="title">Contact Us</h2>
+                    </div>
+
+                    <form action="">
+                        <div class="form">
+                            <div class="formtop">
+                                <input type="text" name="name" id="name" placeholder="Name" class="name" />
+                                <input type="email" name="email" id="email" placeholder="Email" class="name" />
+                            </div>
+                            <div class="formbottom">
+                                <input type="text" name="message" id="message" placeholder="Message" class="message" />
+                            </div>
+                            <div class="buttoncontainer">
+                                <button class="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact us  ends  here -->
+
+
+    </main>
+
+
+    <!-- this is footer -->
+    <footer>
+        <div class="footercontainer">
+            <div class="footerLogo">
+                <img src="/assets/logo/logo1.png" alt="logo" width={60} height={60} />
+                <span>GMIT</span>
+            </div>
+            <div class="footercontent">
+                <div class="leftSideContainer">
+                    <div class="leftSide">
+                        <div>
+                            <span class="leftSideTitle">Office Address</span>
+                            <div class="texts">
+                                <p>8QPP+95J, Rd No.1, Chattogram</p>
+                                <p>Support:</p>
+                                <p>Helpline:</p>
+                            </div>
+                            <div class="paymentMethod">
+                                <h2 class="paymentTitle">Payment Methods:</h2>
+                                <div class="paymentContainer">
+                                    <span class="bkashContainer">
+                                        <img src="/assets/footer/leftside/bKash.svg" alt="bKash" width={40}
+                                            height={40} />
+                                        <img src="/assets/footer/leftside/bKashicon.svg" alt="bKashicon" width={30}
+                                            height={30} />
+                                    </span>
+                                    <span class="visaicon">
+                                        <img src="/assets/footer/leftside/visa.svg" alt="visaicon" width={40}
+                                            height={40} />
+                                    </span>
+                                    <span class="anothermethod">
+                                        <img src="/assets/footer/leftside/leftvector.svg" alt="lefticon" width={20}
+                                            height={20} />
+                                        <img src="/assets/footer/leftside/middlevector.svg" alt="middleicon" width={20}
+                                            height={20} />
+                                        <img src="/assets/footer/leftside/rightvector.svg" alt="righticon" width={20}
+                                            height={20} />
+                                    </span>
+                                    <span class="paypalicon">
+                                        <img src="/assets/footer/leftside/paypal.svg" alt="paypalicon" width={80}
+                                            height={38} />
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="middleSideContainer">
+                    <div class="navitems">
+                        <div class="navitem">
+                            <a href="/">Home</a>
+                            <a href="/">About</a>
+                            <a href="/">Offline Services</a>
+                            <a href="/">Contact Us</a>
+                        </div>
+                        <div class="navitem">
+                            <a href="/">Our Donation</a>
+                            <a href="/">Review</a>
+                            <a href="/">Donation</a>
+                            <a href="/">Help Desk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightSideContainer">
+                    <h2 class="rightText">Follow us</h2>
+                    <div>
+                        <div class="socialMediaContainer">
+                            <span>
+                                <img src="/assets/footer/rightside/facebookicon.svg" alt="facebookicon" width={50}
+                                    height={40} />
+                            </span>
+                            <span>
+                                <img src="/assets/footer/rightside/instaicon.svg" alt="instaicon" width={50}
+                                    height={40} />
+                            </span>
+                            <span>
+                                <img src="/assets/footer/rightside/linkdinicon.svg" alt="linkdinicon" width={50}
+                                    height={40} />
+                            </span>
+                            <span>
+                                <img src="/assets/footer/rightside/whatsappicon.svg" alt="whatsappicon" width={50}
+                                    height={40} />
+                            </span>
+                        </div>
+                        <h2 class="dowloadText">Download App</h2>
+                        <div class="googlepay">
+                            <span>
+                                <img src="/assets/footer/rightside/googlepayicon.svg" alt="googlepayicon" width={100}
+                                    height={60} />
+                            </span>
+                            <span>
+                                <img src="/assets/footer/rightside/appstoreicon.svg" alt="appstoreicon" width={100}
+                                    height={60} />
+                            </span>
+                        </div>
+
+                        <p class="bottomtext">© 2021 - 2023 GlobalMission. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

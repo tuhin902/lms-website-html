@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/customerregister.css">
+    <title>Customer Service Provider</title>
+</head>
+
+<body>
+    <main>
+        <section id="customerregister">
+            <div class="customerRegisterpage">
+                <div class="customerRegistercontainer">
+                    <div class="formleft">
+                        <div class="loginimg">
+                            <img src="/assets/registerimg/registerimg.png" alt="" fill />
+                        </div>
+                        <div class="group1">
+                            <img src="/assets/registerimg/group1.png" alt="" fill />
+                        </div>
+                        <div class="group2">
+                            <img src="/assets/registerimg/group2.png" alt="" fill />
+                        </div>
+                    </div>
+                    <div class="formright">
+                        <div class="formtop">
+                            <div class="loginlogo">
+                                <img src="/assets/logo/loginlogo.png" alt="" fill />
+                            </div>
+                            <a href="/login.html"><button class="loginbtn">Login</button></a>
+                        </div>
+                        <form action="" class="form">
+                            <h2 class="registertext">Register</h2>
+                            <p class="customerserviceprovider">Customer Service Provider</p>
+                            <div class="names">
+                                <div>
+                                    <label htmlFor="firstname">First Name</label>
+                                    <input type="text" name="firstname" id="firstname" required />
+                                </div>
+                                <div>
+                                    <label htmlFor="lastname">Last Name</label>
+                                    <input type="text" name="lastname" id="lastname" required />
+                                </div>
+                            </div>
+                            <div class="loginnumber">
+                                <div>
+                                    <label htmlFor="loginnumber">Login Mobile No</label>
+                                    <input type="text" name="loginnumber" id="loginnumber" required />
+                                </div>
+                                <button class="sendcodebtn">Send Code</button>
+                            </div>
+
+                            <div class="emailfield">
+                                <label htmlFor="email">Email</label>
+                                <input type="text" name="email" id="email" required />
+                            </div>
+                            <div class="whatsappfield">
+                                <label htmlFor="whasappnumber">What’s App No</label>
+                                <input type="text" name="whasappnumber" id="whasappnumber" required />
+                            </div>
+
+                            <div class="district">
+                                <label htmlFor="district">District</label>
+                                <select name="district" id="district" required>
+                                    <option selected>Select District</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="divisionthana">
+                                <div>
+                                    <label htmlFor="division">Division</label>
+                                    <select name="division" id="division" required>
+                                        <option selected>Select Division</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label htmlFor="thana">Thana</label>
+                                    <select name="thana" id="thana" required>
+                                        <option selected>Select Thana</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="monitorsNamefield">
+                                <label htmlFor="monitorsname">Monitors Name</label>
+                                <input type="text" name="monitorsname" id="monitorsname" required />
+                            </div>
+                            <div class="monitorsNumberfield">
+                                <label htmlFor="monitorsnumber">Monitor Mobile No (Login )</label>
+                                <input type="text" name="monitorsnumber" id="monitorsnumber" required />
+                            </div>
+                            <div class="directorNamefield">
+                                <label htmlFor="directorname">Director Name</label>
+                                <input type="text" name="directorname" id="directorname" required />
+                            </div>
+                            <div class="directorNumberfield">
+                                <label htmlFor="monitorsname">Director Mobile No</label>
+                                <input type="text" name="directornumber" id="directornumber" required />
+                            </div>
+                            <div class="password">
+                                <div>
+                                    <label htmlFor="password">Password</label>
+                                    <input type="password" name="password" id="password" required />
+                                </div>
+                                <div>
+                                    <label htmlFor="confirmpassword">Confirm Password</label>
+                                    <input type="password" name="confirmpassword" id="confirmpassword" required />
+                                </div>
+                            </div>
+
+                            <div class="registerbtncontainer">
+                                <button type="submit" class="registerbtn">
+                                    Register
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

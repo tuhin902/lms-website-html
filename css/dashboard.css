@@ -1,0 +1,1175 @@
+.dashboardcontainer {
+  height: 1632px;
+  border-radius: var(--Premitive-premitive-premitive-s, 0px);
+  background: #e4d9ff;
+}
+.dashboard {
+  display: flex;
+  gap: 30px;
+  width: 90vw;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.sidebar {
+  flex: 1;
+  width: 315px;
+  height: 873px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  background: #ffe5ec;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.rightcontent {
+  flex: 3;
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboardcontainer {
+    height: 100%;
+  }
+  .dashboard {
+    flex-direction: column;
+    gap: 48px;
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .sidebar {
+    width: 100%;
+    height: 1000px;
+    background: none;
+    box-shadow: none;
+  }
+
+  .rightcontent {
+    flex: 3;
+  }
+}
+
+.sidebarcontainer {
+  padding-top: 69px;
+  position: relative;
+}
+
+.profileimg {
+  width: 128px;
+  height: 128px;
+  position: relative;
+  border-radius: var(--Premitive-premitive-premitive-s, 128px);
+  margin: auto;
+  margin-bottom: 12px;
+  /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+}
+.sidelinks {
+  margin-top: 53px;
+}
+.sidelink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  color: #000;
+  text-align: center;
+  font-family: Kantumruy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.name {
+  color: #263238;
+  font-family: Kantumruy;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+.id {
+  color: #263238;
+  text-align: center;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.number {
+  color: #263238;
+  text-align: center;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+.complete {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.complete p {
+  color: #000;
+  text-align: center;
+  font-family: Kantumruy;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.dashbar {
+  border: 2px dashed gray;
+}
+
+.pdfbtn {
+  width: 200px;
+  height: 36px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  color: #000;
+  text-align: center;
+  font-family: Kantumruy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0px;
+  bottom: 22px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-top: 40px;
+    position: relative;
+  }
+
+  .profileimg {
+    width: 128px;
+    height: 128px;
+    margin-bottom: 12px;
+  }
+  .sidelinks {
+    margin-top: 40px;
+  }
+  /* .sidelink {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 35px;
+      color: #000;
+      text-align: center;
+      font-family: Kantumruy;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    } */
+
+  .name {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .id {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .number {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .complete {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  .complete p {
+    color: #000;
+    text-align: center;
+    font-family: Kantumruy;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .dashbar {
+    border: 2px dashed gray;
+  }
+
+  .pdfbtn {
+    width: 163px;
+    height: 30px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+  }
+}
+/* sidebar style ends here  */
+
+/* viewprofile section style start here  */
+.viewprofilecontainer {
+  width: 877px;
+  height: 873px;
+  border-radius: 20px;
+  background: #ffe5ec;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewprofiletitle {
+  width: 609px;
+  margin: auto;
+  color: #2d094f;
+  text-align: center;
+  font-family: Kantumruy;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 31px;
+}
+
+.viewprofiledesc {
+  width: 715px;
+  height: 289px;
+  margin: auto;
+  color: #000;
+  text-align: center;
+  font-family: Kantumruy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media only screen and (max-width: 768px) {
+  .viewprofilecontainer {
+    display: none;
+  }
+}
+
+/* viewprofile section style ends here  */
+
+/* myprofile section style start here  */
+.myprofilecontainer {
+  width: 877px;
+  height: 873px;
+  padding-left: 71px;
+  padding-right: 71px;
+  padding-top: 61px;
+  border-radius: 20px;
+  background: #ffe5ec;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Myprofile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myprofiletext {
+  color: #000;
+  text-align: center;
+  font-family: Kantumruy;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.profileicon {
+  width: 44px;
+  height: 44px;
+}
+
+.form {
+  margin-top: 70px;
+}
+.myprofileformtop {
+  display: flex;
+  gap: 31px;
+}
+
+.myprofileformtop > div label {
+  display: block;
+  color: #000;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.myprofileformtop > div input {
+  width: 352px;
+  height: 56px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  border: none;
+  margin-top: 18px;
+}
+
+.myprofileformmiddle {
+  display: flex;
+  gap: 31px;
+}
+
+.myprofileformmiddle > div label {
+  display: block;
+  color: #000;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.myprofileformmiddle > div input {
+  width: 352px;
+  height: 56px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  border: none;
+  margin-top: 18px;
+}
+
+.uploadimg {
+  margin-top: 50px;
+}
+
+.uploadimg > h2 {
+  color: #000;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.updatedimg {
+  margin-top: 10px;
+  width: 128px;
+  height: 128px;
+  position: relative;
+  border-radius: var(--Premitive-premitive-premitive-s, 128px);
+}
+
+.uploadfield {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  margin-top: 20px;
+}
+.uploadfile {
+  display: none;
+}
+
+.uploadicon {
+  width: 24px;
+  height: 24px;
+}
+
+.uploadtext {
+  color: #000;
+  text-align: center;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.myprofilebtncontainer {
+  display: flex;
+  justify-content: center;
+}
+.myprofilechangebtn {
+  width: 171px;
+  height: 42px;
+  border-radius: 10px;
+  background: #7435de;
+  color: #fff;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .myprofilecontainer {
+    width: 100%;
+    height: 873px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  .Myprofile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .myprofiletext {
+    font-size: 12px;
+  }
+
+  .profileicon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .form {
+    margin-top: 30px;
+  }
+  .myprofileformtop {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .myprofileformtop > div label {
+    font-size: 12px;
+  }
+  .myprofileformtop > div input {
+    width: 309px;
+    height: 30px;
+    margin-top: 18px;
+  }
+
+  .myprofileformmiddle {
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+  }
+
+  .myprofileformmiddle > div label {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
+  .myprofileformmiddle > div input {
+    width: 309px;
+    height: 30px;
+    margin-top: 18px;
+  }
+
+  .uploadimg {
+    margin-top: 30px;
+  }
+
+  .uploadimg > h2 {
+    font-size: 12px;
+  }
+
+  .updatedimg {
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .uploadfield {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background: #d9d9d9;
+    margin-top: 20px;
+  }
+  .uploadfile {
+    display: none;
+  }
+
+  .uploadicon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .uploadtext {
+    color: #000;
+    text-align: center;
+    font-family: Kantumruy;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .myprofilebtncontainer {
+    display: flex;
+    justify-content: center;
+  }
+  .myprofilechangebtn {
+    width: 171px;
+    height: 42px;
+    border-radius: 10px;
+    background: #7435de;
+    color: #fff;
+    font-family: Kantumruy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 50px;
+  }
+}
+
+/* myprofile section style ends here  */
+
+/* Additioninfo section style starts here  */
+.additionalinfocontainer {
+  width: 877px;
+  height: 873px;
+  border-radius: 20px;
+  background: #ffe5ec;
+  padding-left: 71px;
+  padding-right: 71px;
+  padding-top: 61px;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.additionalinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.additionaltext {
+  color: #000;
+  text-align: center;
+  font-family: Kantumruy;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.additionalinfoprofileicon {
+  width: 44px;
+  height: 44px;
+}
+
+.additionalinfoinputcontainer {
+  margin-top: 100px;
+}
+
+.additionalinfoformtop {
+  display: flex;
+  gap: 31px;
+}
+
+.additionalinfoformtop > div label {
+  display: block;
+  color: #000;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.additionalinfoformtop > div input {
+  width: 352px;
+  height: 56px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  border: none;
+  margin-top: 18px;
+}
+
+.additionalinfoformmiddle {
+  display: flex;
+  gap: 31px;
+}
+
+.additionalinfoformmiddle > div label {
+  display: block;
+  color: #000;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 27px;
+}
+
+.additionalinfoformmiddle > div input {
+  width: 352px;
+  height: 56px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  border: none;
+  margin-top: 18px;
+}
+
+.additionalinfobtncontainer {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.additionalinfochangebtn {
+  width: 171px;
+  height: 42px;
+  border-radius: 10px;
+  background: #7435de;
+  color: #fff;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .additionalinfocontainer {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    box-shadow: none;
+  }
+
+  .additionalinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .additionaltext {
+    color: #000;
+    text-align: center;
+    font-family: Kantumruy;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .additionalinfoprofileicon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .additionalinfoinputcontainer {
+    margin-top: 50px;
+  }
+
+  .additionalinfoformtop {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .additionalinfoformtop > div label {
+    font-size: 12px;
+  }
+
+  .additionalinfoformtop > div input {
+    width: 309px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 18px;
+  }
+
+  .additionalinfoformmiddle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .additionalinfoformmiddle > div label {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .additionalinfoformmiddle > div input {
+    width: 309px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+  }
+
+  .additionalinfobtncontainer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .additionalinfochangebtn {
+    width: 90px;
+    height: 25px;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+/* myprofile section style ends here  */
+
+/* Address section style starts here  */
+.addresscontainer {
+  width: 877px;
+  height: 873px;
+  padding-left: 71px;
+  padding-right: 71px;
+  padding-top: 61px;
+  border-radius: 20px;
+  background: #ffe5ec;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addresstext {
+  color: #000;
+  text-align: center;
+  font-family: Kantumruy;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.addressprofileicon {
+  width: 44px;
+  height: 44px;
+}
+
+.addressinputcontainer {
+  margin-top: 50px;
+}
+
+.addresspresenttext {
+  color: #000;
+  font-family: Kantumruy;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.addresspresenttop {
+  display: flex;
+  gap: 31px;
+}
+.addresspresenttop label {
+  display: block;
+  color: #000;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.addresspresenttop input {
+  width: 352px;
+  height: 56px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  border: none;
+  margin-top: 18px;
+  margin-bottom: 27px;
+}
+.addresspresentbottom {
+  display: flex;
+  gap: 31px;
+}
+.addresspresentbottom label {
+  display: block;
+  color: #000;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.addresspresentbottom input {
+  width: 352px;
+  height: 56px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  border: none;
+  margin-top: 18px;
+  margin-bottom: 27px;
+}
+
+.addressparmanenttext {
+  color: #000;
+  font-family: Kantumruy;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.addressparmanenttop {
+  display: flex;
+  gap: 31px;
+}
+.addressparmanenttop label {
+  display: block;
+  color: #000;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.addressparmanenttop input {
+  width: 352px;
+  height: 56px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  border: none;
+  margin-top: 18px;
+  margin-bottom: 27px;
+}
+.addressparmanentbottom {
+  display: flex;
+  gap: 31px;
+}
+.addressparmanentbottom label {
+  display: block;
+  color: #000;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.addressparmanentbottom input {
+  width: 352px;
+  height: 56px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  border: none;
+  margin-top: 18px;
+  margin-bottom: 27px;
+}
+
+.addressbtncontainer {
+  display: flex;
+  justify-content: center;
+}
+.addresschangebtn {
+  width: 171px;
+  height: 42px;
+  border-radius: 10px;
+  background: #7435de;
+  color: #fff;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .addresscontainer {
+    width: 100%;
+    height: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  .address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .addresstext {
+    font-size: 16px;
+  }
+
+  .addressprofileicon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .addressinputcontainer {
+    margin-top: 30px;
+  }
+
+  .addresspresenttext {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .addresspresenttop {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .addresspresenttop label {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .addresspresenttop input {
+    width: 309px;
+    height: 30px;
+    border-radius: 10px;
+    background: #d9d9d9;
+    border: none;
+    margin-top: 18px;
+    margin-bottom: 27px;
+  }
+  .addresspresentbottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .addresspresentbottom label {
+    font-size: 13px;
+  }
+
+  .addresspresentbottom input {
+    width: 309px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 18px;
+    margin-bottom: 27px;
+  }
+
+  .addressparmanenttext {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+
+  .addressparmanenttop {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .addressparmanenttop label {
+    font-size: 13px;
+  }
+
+  .addressparmanenttop input {
+    width: 309px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 18pxpx;
+  }
+  .addressparmanentbottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .addressparmanentbottom label {
+    font-size: 13px;
+  }
+
+  .addressparmanentbottom input {
+    width: 309px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+
+  .addressbtncontainer {
+    display: flex;
+    justify-content: center;
+  }
+  .addresschangebtn {
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
+
+/* Address section style ends here  */
+
+/* Education section style starts here  */
+.educationcontainer {
+  width: 877px;
+  height: 873px;
+  padding-left: 71px;
+  padding-right: 71px;
+  padding-top: 61px;
+  border-radius: 20px;
+  background: #ffe5ec;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.education {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.educationtext {
+  color: #000;
+  text-align: center;
+  font-family: Kantumruy;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.educationprofileicon {
+  width: 44px;
+  height: 44px;
+}
+
+.educationinputcontainer {
+  margin-top: 100px;
+}
+.educationinputcontainer label {
+  display: block;
+  color: #000;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.educationinputcontainer input {
+  width: 352px;
+  height: 56px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  border: none;
+  margin-top: 18px;
+  margin-bottom: 27px;
+}
+
+.educationbtncontainer {
+  display: flex;
+  justify-content: end;
+}
+.educationchangebtn {
+  width: 171px;
+  height: 42px;
+  border-radius: 10px;
+  background: #7435de;
+  color: #fff;
+  font-family: Kantumruy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .educationcontainer {
+    width: 100%;
+    height: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  .education {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .educationtext {
+    font-size: 13px;
+  }
+
+  .educationprofileicon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .educationinputcontainer {
+    margin-top: 50px;
+  }
+
+  .educationinputcontainer label {
+    font-size: 13px;
+  }
+
+  .educationinputcontainer input {
+    width: 309px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+
+  .educationbtncontainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .educationchangebtn {
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-top: 50px;
+  }
+}
+
+/* Education section style ends here  */
