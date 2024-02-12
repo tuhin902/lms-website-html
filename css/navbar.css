@@ -34,12 +34,11 @@
 
 .links {
   display: flex;
-  align-items: center;
   font-weight: bold;
   gap: 15px;
 }
 
-.links a {
+.link {
   color: rgb(128, 128, 128);
   text-decoration: none;
 }

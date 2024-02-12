@@ -20,8 +20,8 @@
   font-size: 25px;
   font-weight: 700;
   position: absolute;
-  top: 11px;
-  right: 50px;
+  top: -67px;
+  right: 48px;
 }
 
 .ourcoursescontent {
@@ -45,7 +45,7 @@
   color: white;
 }
 
-.ourcoursescardcardImg{
+.ourcoursescardcardImg {
   width: 295px;
   height: 185px;
 }
@@ -69,6 +69,27 @@
   display: flex;
 }
 
+@media only screen and (max-width: 1080px) {
+  .ourcoursescontent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .ourcourses {
+    font-size: 18px;
+    margin-bottom: 68px;
+  }
+
+  .category {
+    width: 80px;
+    height: 25px;
+    padding-left: 10px;
+    font-size: 10px;
+    top: -62px;
+    left: 40%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .ourcoursescontent {
     display: grid;
@@ -76,17 +97,16 @@
     gap: 10px;
   }
   .ourcourses {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 68px;
   }
 
   .category {
-    width: 66px;
-    height: 15px;
+    width: 80px;
+    height: 25px;
     padding-left: 10px;
-    font-size: 8px;
-    position: absolute;
-    top: 25px;
-    left: 43%;
+    font-size: 10px;
+    top: -62px;
+    left: 40%;
   }
 }
