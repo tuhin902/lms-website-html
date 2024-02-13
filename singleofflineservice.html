@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/singleofflineservice.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <title>offline service</title>
 </head>
 
-<body>
+<body class="container-fluid">
     <main>
         <section>
             <div class="offlineservicecontainer">
@@ -34,13 +36,31 @@
                                 child&apos;s learning with us!
                             </p>
                         </div>
-                        <div class="bannerBottom">
+
+                        <div>
+                            <ul class="nav" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class=" active paidCourse" id="simple-tab-0" data-bs-toggle="tab"
+                                        href="#simple-tabpanel-0" role="tab" aria-controls="simple-tabpanel-0"
+                                        aria-selected="true">Paid Courses (10)</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="freeCourse " id="simple-tab-1" data-bs-toggle="tab"
+                                        href="#simple-tabpanel-1" role="tab" aria-controls="simple-tabpanel-1"
+                                        aria-selected="false">Free Courses
+                                        (2)</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <!-- <div class="bannerBottom">
                             <p class="paidCourse">Paid Courses (10)</p>
                             <p class="freeCourse">Free Courses (2)</p>
-                        </div>
+                        </div> -->
                     </div>
-                    <div class="bannerImg">
-                        <img src="/assets/servicepage/servicebannerimg.png" alt="" fill />
+                    <div>
+                        <img class="bannerImg" src="/assets/servicepage/servicebannerimg.png" alt="" fill />
                     </div>
                 </div>
 
@@ -62,64 +82,143 @@
                         </div>
 
                         <!-- {/* Course card */} -->
-                        <div class="cardContainer">
-                            <div class="card">
-                                <div class="cardimg">
-                                    <img src="/assets/servicepage/paidcourse1.png" alt="" fill />
-                                </div>
-                                <div class="cardDetails">
-                                    <h2>App Development</h2>
-                                    <p>Teacher name</p>
-                                    <span class="offerprice">tk.900</span>
-                                    <span class="beforeprice">tk.100</span>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="cardimg">
-                                    <img src="/assets/servicepage/paidcourse1.png" alt="" fill />
-                                </div>
-                                <div class="cardDetails">
-                                    <h2>App Development</h2>
-                                    <p>Teacher name</p>
-                                    <span class="offerprice">tk.900</span>
-                                    <span class="beforeprice">tk.100</span>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="cardimg">
-                                    <img src="/assets/servicepage/paidcourse1.png" alt="" fill />
-                                </div>
-                                <div class="cardDetails">
-                                    <h2>App Development</h2>
-                                    <p>Teacher name</p>
-                                    <span class="offerprice">tk.900</span>
-                                    <span class="beforeprice">tk.100</span>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="cardimg">
-                                    <img src="/assets/servicepage/paidcourse1.png" alt="" fill />
-                                </div>
-                                <div class="cardDetails">
-                                    <h2>App Development</h2>
-                                    <p>Teacher name</p>
-                                    <span class="offerprice">tk.900</span>
-                                    <span class="beforeprice">tk.100</span>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="cardimg">
-                                    <img src="/assets/servicepage/paidcourse1.png" alt="" fill />
-                                </div>
-                                <div class="cardDetails">
-                                    <h2>App Development</h2>
-                                    <p>Teacher name</p>
-                                    <span class="offerprice">tk.900</span>
-                                    <span class="beforeprice">tk.100</span>
+
+                        <div class="tab-content pt-3" id="tab-content">
+                            <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel"
+                                aria-labelledby="simple-tab-0">
+                                <div class="cardContainer">
+                                    <div class="paidcoursecard">
+
+                                        <img class="paidcoursecardimg" src="/assets/servicepage/paidcourse1.png"
+                                            alt="" />
+
+                                        <div class="cardDetails">
+                                            <h2>app Development</h2>
+                                            <p>Teacher name</p>
+                                            <span class="offerprice">tk.900</span>
+                                            <span class="beforeprice">tk.100</span>
+                                        </div>
+                                    </div>
+                                    <div class="paidcoursecard">
+
+                                        <img class="paidcoursecardimg" src="/assets/servicepage/paidcourse1.png"
+                                            alt="" />
+
+                                        <div class="cardDetails">
+                                            <h2>app Development</h2>
+                                            <p>Teacher name</p>
+                                            <span class="offerprice">tk.900</span>
+                                            <span class="beforeprice">tk.100</span>
+                                        </div>
+                                    </div>
+                                    <div class="paidcoursecard">
+
+                                        <img class="paidcoursecardimg" src="/assets/servicepage/paidcourse1.png"
+                                            alt="" />
+
+                                        <div class="cardDetails">
+                                            <h2>app Development</h2>
+                                            <p>Teacher name</p>
+                                            <span class="offerprice">tk.900</span>
+                                            <span class="beforeprice">tk.100</span>
+                                        </div>
+                                    </div>
+                                    <div class="paidcoursecard">
+
+                                        <img class="paidcoursecardimg" src="/assets/servicepage/paidcourse1.png"
+                                            alt="" />
+
+                                        <div class="cardDetails">
+                                            <h2>app Development</h2>
+                                            <p>Teacher name</p>
+                                            <span class="offerprice">tk.900</span>
+                                            <span class="beforeprice">tk.100</span>
+                                        </div>
+                                    </div>
+                                    <div class="paidcoursecard">
+
+                                        <img class="paidcoursecardimg" src="/assets/servicepage/paidcourse1.png"
+                                            alt="" />
+
+                                        <div class="cardDetails">
+                                            <h2>app Development</h2>
+                                            <p>Teacher name</p>
+                                            <span class="offerprice">tk.900</span>
+                                            <span class="beforeprice">tk.100</span>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
+                            <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1">
+
+                                <div class="cardContainer">
+                                    <div class="paidcoursecard">
+
+                                        <img class="paidcoursecardimg" src="/assets/servicepage/paidcourse1.png"
+                                            alt="" />
+
+                                        <div class="cardDetails">
+                                            <h2>app Development</h2>
+                                            <p>Teacher name</p>
+                                            <span class="offerprice">tk.900</span>
+                                            <span class="beforeprice">tk.100</span>
+                                        </div>
+                                    </div>
+                                    <div class="paidcoursecard">
+
+                                        <img class="paidcoursecardimg" src="/assets/servicepage/paidcourse1.png"
+                                            alt="" />
+
+                                        <div class="cardDetails">
+                                            <h2>app Development</h2>
+                                            <p>Teacher name</p>
+                                            <span class="offerprice">tk.900</span>
+                                            <span class="beforeprice">tk.100</span>
+                                        </div>
+                                    </div>
+                                    <div class="paidcoursecard">
+
+                                        <img class="paidcoursecardimg" src="/assets/servicepage/paidcourse1.png"
+                                            alt="" />
+
+                                        <div class="cardDetails">
+                                            <h2>app Development</h2>
+                                            <p>Teacher name</p>
+                                            <span class="offerprice">tk.900</span>
+                                            <span class="beforeprice">tk.100</span>
+                                        </div>
+                                    </div>
+                                    <div class="paidcoursecard">
+
+                                        <img class="paidcoursecardimg" src="/assets/servicepage/paidcourse1.png"
+                                            alt="" />
+
+                                        <div class="cardDetails">
+                                            <h2>app Development</h2>
+                                            <p>Teacher name</p>
+                                            <span class="offerprice">tk.900</span>
+                                            <span class="beforeprice">tk.100</span>
+                                        </div>
+                                    </div>
+                                    <div class="paidcoursecard">
+
+                                        <img class="paidcoursecardimg" src="/assets/servicepage/paidcourse1.png"
+                                            alt="" />
+
+                                        <div class="cardDetails">
+                                            <h2>app Development</h2>
+                                            <p>Teacher name</p>
+                                            <span class="offerprice">tk.900</span>
+                                            <span class="beforeprice">tk.100</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </section>
                 <!-- service paid course ends  here -->
@@ -311,7 +410,7 @@
                                                     fill="white" />
                                             </svg>
                                         </span>
-                                        Lorem Ipsum 
+                                        Lorem Ipsum
                                     </p>
                                     <p>
                                         <span class="crosssign">

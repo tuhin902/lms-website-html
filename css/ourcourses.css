@@ -28,7 +28,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  
 }
 
 .ourcoursescard {
@@ -72,16 +71,16 @@
     gap: 10px;
   }
   .ourcourses {
-    font-size: 18px;
-    margin-bottom: 68px;
+    font-size: 32px;
+    margin-bottom: 85px;
   }
 
   .category {
-    width: 80px;
-    height: 25px;
+    width: 197px;
+    height: 40px;
     padding-left: 10px;
-    font-size: 10px;
-    top: -62px;
+    font-size: 20px;
+    top: -66px;
     left: 40%;
   }
 }

@@ -39,13 +39,13 @@
   margin-top: 23px;
   display: flex;
   gap: 172px;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .bannerText {
   flex: 1;
   margin-top: 57px;
-  margin-left: 100px;
+  margin-left: 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -73,30 +73,34 @@
 }
 
 .paidCourse {
-  color: #fff;
+  color: white;
   font-family: Kantumruy;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  border-bottom: 4px solid #fff;
-  padding-bottom: 6px;
   padding-left: 6px;
   padding-right: 6px;
+  text-decoration: none;
+  border-bottom: 2px solid white;
 }
+
 .freeCourse {
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
+
+  font-family: Kantumruy;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-left: 10px;
+  text-decoration: none;
 }
+
 .bannerImg {
   flex: 1;
-  width: 620px;
+  width: 100%;
   height: 281px;
-  position: relative;
-  margin-right: 100px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -150,7 +154,7 @@
     font-size: 8px;
     font-weight: 400;
     width: 174px;
-    height: 38px;
+    height: 30px;
   }
 
   .bannerBottom {
@@ -169,11 +173,8 @@
     font-size: 8px;
   }
   .bannerImg {
-    flex: 1;
-    width: 185px;
+    width: 100%;
     height: 107px;
-    position: relative;
-    margin-right: 2px;
   }
 }
 
@@ -218,22 +219,27 @@
   width: 367px;
   height: 46px;
   border: none;
+  outline: none;
 }
-.coursesearch::placeholder{
-    border: none;
+.coursesearch::placeholder {
+  border: none;
 }
 
 .cardContainer {
   margin-top: 10px;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+}
+
+.cardContainer::-webkit-scrollbar {
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
   .paidcoursecontainer {
-    /* width: 80vw;
-      margin: auto; */
+    width: 85vw;
+    margin: auto;
     margin-top: 15px;
   }
 
@@ -243,44 +249,38 @@
 
   .texttitle {
     margin-top: 11px;
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .coursesearchfield {
-    width: 224px;
+    width: 270px;
     height: 35px;
   }
 
   .coursesearch {
-    width: 224px;
+    width: 270px;
     height: 35px;
   }
 
   .cardContainer {
     margin-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     margin-bottom: 10px;
     /* gap: 10px; */
   }
 }
 
-.card {
+.paidcoursecard {
   width: 300px;
   height: 372px;
-  /* margin: auto; */
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px;
 }
 
-.cardimg {
+.paidcoursecardimg {
   width: 300px;
   height: 220px;
-
-  display: flex;
-  justify-content: center;
 }
 
 .cardDetails {
@@ -331,16 +331,16 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .card {
-    width: 115px;
-    height: 143px;
+  .paidcoursecard {
+    width: 200px;
+    height: 200px;
     margin-bottom: 10px;
     margin: auto;
   }
 
-  .cardimg {
-    width: 115px;
-    height: 85px;
+  .paidcoursecardimg {
+    width: 200px;
+    height: 120px;
   }
 
   .cardDetails {
@@ -503,8 +503,8 @@
     gap: 15px;
   }
   .pricecard {
-    width: 143px;
-    height: 230px;
+    width: 200px;
+    height: 260px;
     margin-bottom: 0px;
   }
 
@@ -527,17 +527,17 @@
   }
 
   .rightsign {
-    width: 9px;
-    height: 9px;
+    width: 12px;
+    height: 12px;
   }
 
   .crosssign {
-    width: 9px;
-    height: 9px;
+    width: 12px;
+    height: 12px;
   }
 
   .cardDetails p {
-    font-size: 8px;
+    font-size: 12px;
     gap: 10px;
   }
 

@@ -18,6 +18,29 @@
   text-decoration: none;
 }
 
+
+@media only screen and (max-width: 1080px) {
+  .offlineservicecontainer {
+    margin-bottom: 200px;
+  }
+  .offlineservicetitle {
+    color: #000;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 68px;
+    margin-top: 68px;
+  }
+  
+  .offlineservicecontent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .offlineservicecontent a {
+    text-decoration: none;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .offlineservicecontainer {
     margin-bottom: 60px;
@@ -57,6 +80,7 @@
   font-weight: 700;
   margin: 12px 25px 12px 25px;
 }
+
 
 @media only screen and (max-width: 768px) {
   .offlineservicecard {
