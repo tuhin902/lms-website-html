@@ -85,22 +85,22 @@
   .formtop {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 15px;
   }
 
   .email,
   .name {
-    width: 235px;
-    height: 25px;
+    width: 295px;
+    height: 40px;
   }
   .message {
-    width: 235px;
-    height: 65px;
+    width: 295px;
+    height: 100px;
   }
 
   .submit {
-    width: 100px;
-    height: 39px;
+    width: 150px;
+    height: 45px;
     border-radius: 100px;
     font-size: 16px;
   }
