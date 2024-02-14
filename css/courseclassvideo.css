@@ -51,6 +51,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 .bookmarksbtn {
   color: #fff;
@@ -320,6 +321,9 @@
     justify-content: center;
     gap: 4px;
     overflow-y: scroll;
+
+    margin-left: 0px;
+    margin-left: 0px;
   }
 }
 
@@ -363,6 +367,35 @@
   font-weight: 600;
   line-height: normal;
   border: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .leftside {
+    flex: 1;
+  }
+
+  .video {
+    width: 100%;
+    height: 300px;
+  }
+
+  .videochangebtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    gap: 20px;
+  }
+
+  .previousbtn {
+    width: 128px;
+    height: 23px;
+    font-size: 15px;
+  }
+  .nextbtn {
+    width: 128px;
+    height: 23px;
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -489,12 +522,13 @@
 
 @media only screen and (max-width: 768px) {
   .sessioncard {
-    width: 165px;
+    width: 200px;
+    height: 200px;
     margin-top: 18px;
   }
 
   .sessioncardimg {
-    width: 165px;
+    width: 200px;
     height: 106px;
     position: relative;
     border-radius: 10px;
