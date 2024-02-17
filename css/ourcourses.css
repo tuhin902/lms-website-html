@@ -20,8 +20,8 @@
   font-size: 25px;
   font-weight: 700;
   position: absolute;
-  top: -67px;
-  right: 48px;
+  top: 20px;
+  right: 40px;
 }
 
 .ourcoursescontent {
@@ -80,7 +80,7 @@
     height: 40px;
     padding-left: 10px;
     font-size: 20px;
-    top: -66px;
+    top: 50px;
     left: 40%;
   }
 }
@@ -101,7 +101,7 @@
     height: 25px;
     padding-left: 10px;
     font-size: 10px;
-    top: -62px;
+    top: 30px;
     left: 40%;
   }
 }
