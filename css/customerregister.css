@@ -154,6 +154,7 @@
   height: 39px;
   border-radius: 20px;
   border: none;
+  padding-left: 10px;
 }
 
 .sendcodebtn {
@@ -179,6 +180,7 @@
   border-radius: 20px;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
   border: none;
+  padding-left: 10px;
 }
 .whatsappfield input {
   width: 400px;
@@ -187,6 +189,7 @@
   border-radius: 20px;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
   border: none;
+  padding-left: 10px;
 }
 
 .district select {
@@ -220,6 +223,7 @@
   background: #fff;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
   border: none;
+  padding-left: 10px;
 }
 .monitorsNumberfield input {
   width: 400px;
@@ -229,6 +233,7 @@
   background: #fff;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
   border: none;
+  padding-left: 10px;
 }
 .directorNamefield input {
   width: 400px;
@@ -238,6 +243,7 @@
   background: #fff;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
   border: none;
+  padding-left: 10px;
 }
 .directorNumberfield input {
   width: 400px;
@@ -247,6 +253,7 @@
   background: #fff;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
   border: none;
+  padding-left: 10px;
 }
 
 .password {
