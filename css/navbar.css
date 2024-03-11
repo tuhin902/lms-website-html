@@ -43,12 +43,12 @@
   text-decoration: none;
 }
 
-.afterlogin {
+/* .afterlogin {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-}
+  gap: 0px;
+} */
 .login,
 .signup {
   padding: 10px;
@@ -57,6 +57,10 @@
   border-radius: 20px;
   font-weight: bold;
   border: none;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
 }
 
 .menuButton {
