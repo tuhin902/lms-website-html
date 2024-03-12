@@ -34,7 +34,7 @@
                                 <p class="dashbar"></p>
                             </div>
                             <div class="sidelinks">
-                                <a href="/dashboard/myprofile" class="sidelink">
+                                <a href="/dashboard/myprofile" class="sidelink active">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none">
@@ -53,7 +53,7 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <a href="/dashboard/additionalinfo" class="sidelink">
+                                <a href="/dashboard/additionalinfo" class="sidelink ">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none">
@@ -72,7 +72,7 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <a href="/dashboard/address" class="sidelink">
+                                <a href="/dashboard/address" class="sidelink ">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none">
@@ -91,7 +91,7 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <a href="/dashboard/education" class="sidelink">
+                                <a href="/dashboard/education" class="sidelink ">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none">
@@ -111,18 +111,18 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="pdfbtn">
-                                <a href="/">Download PDF</a>
+                            <div>
+                                <a class="pdfbtn" href="/">Download PDF</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- sidebar ends  here -->
+
+
                     <div class="rightcontent">
-
-
                         <!-- View Profile section starts from here -->
-                        <section>
+                        <!-- <section>
                             <div class="viewprofilecontainer">
                                 <div>
                                     <h2 class="viewprofiletitle">Add Your Additional Educational And Job-Related
@@ -137,7 +137,7 @@
                                     </p>
                                 </div>
                             </div>
-                        </section>
+                        </section> -->
                         <!-- View Profile section ends from here -->
 
 
@@ -214,7 +214,7 @@
 
 
                         <!-- Addition Info section starts  here -->
-                        <!-- <section>
+                        <section>
                             <div class="additionalinfocontainer">
                                 <div class="additionalinfo">
                                     <p class="additionaltext">Additional Info</p>
@@ -230,9 +230,14 @@
                                 <form action="">
                                     <div class="additionalinfoinputcontainer">
                                         <div class="additionalinfoformtop">
-                                            <div>
+                                            <div class="selectgender">
                                                 <label htmlFor="gender">Your Gender</label>
-                                                <input type="text" name="gender" id="gender" />
+                                                <select name="gender" id="gender">
+                                                    <option value="selectgender">Select Your Gender</option>
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                </select>
+
                                             </div>
                                             <div>
                                                 <label htmlFor="email">Email</label>
@@ -255,7 +260,7 @@
                                     </div>
                                 </form>
                             </div>
-                        </section> -->
+                        </section>
                         <!-- Addition Info section ends  here -->
 
 
