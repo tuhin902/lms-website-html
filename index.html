@@ -20,87 +20,140 @@
 
 <body class="container-fluid">
 
-    <nav class="navbar navbar-expand-lg bg-black text-white ">
-        <div class="container-fluid">
-            <a class="navbar-brand logo" href="#"><img src="/assets/logo/logo1.png" alt="logo" width={50} height={50} />
-                <span>GMIT</span></a>
-            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 links">
-                    <li class="nav-item ">
-                        <a class="active link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link " href="#ourcourses">Our Courses</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="link " href="#aboutus">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="#offlineservice">Offline Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="./review.html">Review</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="./helpdesk.html">Help Desk</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link" href="/mycourses.html">My Courses</a>
-                    </li>
-
-                </ul>
-                <div class="d-flex py-3">
-                    <div class="">
-
-                        <!-- after login -->
-                       
-                        <div class="dropdown me-5">
-                            <button class="afterlogin dropdown-toggle bg-black border-0 me-5" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg class="avatar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" fill="none">
-                                    <circle cx="14.8672" cy="14.0606" r="14.0606" fill="#2D094F" />
-                                    <path d="M5.49365 4.68677H24.5328V23.7259H5.49365V4.68677Z" fill="white"
-                                        fill-opacity="0.01" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M15.0134 7.06658C13.699 7.06658 12.6335 8.13209 12.6335 9.44647C12.6335 10.7609 13.699 11.8264 15.0134 11.8264C16.3277 11.8264 17.3933 10.7609 17.3933 9.44647C17.3933 8.13209 16.3277 7.06658 15.0134 7.06658ZM11.0469 9.44647C11.0469 7.25584 12.8227 5.47998 15.0134 5.47998C17.204 5.47998 18.9799 7.25584 18.9799 9.44647C18.9799 11.6371 17.204 13.413 15.0134 13.413C12.8227 13.413 11.0469 11.6371 11.0469 9.44647Z"
-                                        fill="#D1EDDE" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M7.08008 22.1395C7.08008 17.7583 10.6318 14.2065 15.0131 14.2065C19.3943 14.2065 22.946 17.7583 22.946 22.1395C22.946 22.5777 22.5909 22.9328 22.1527 22.9328C21.7146 22.9328 21.3594 22.5777 21.3594 22.1395C21.3594 18.6345 18.5181 15.7931 15.0131 15.7931C11.5081 15.7931 8.66667 18.6345 8.66667 22.1395C8.66667 22.5777 8.3115 22.9328 7.87338 22.9328C7.43525 22.9328 7.08008 22.5777 7.08008 22.1395Z"
-                                        fill="#D1EDDE" />
-                                </svg>
-
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"><button class="login">Profile</button></a></li>
-                                <li><a class="dropdown-item" href="#"><button class="login">Logout</button></a></li>
-                            </ul>
-                        </div>
 
 
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hidesidebar()">
+                <a href="#"><img src="./assets/closeicon/close.svg" alt=""></a>
+            </li>
+            <li class="nav-item ">
+                <a class="active link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="link " href="#ourcourses">Our Courses</a>
+            </li>
 
-                        <!--------------------------
-                             before login interface 
-                            -------------------------->
+            <li class="nav-item">
+                <a class="link " href="#aboutus">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="#offlineservice">Offline Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./review.html">Review</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./helpdesk.html">Help Desk</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="/mycourses.html">My Courses</a>
+            </li>
+            <div>
+                <li>
+                    <a href="/login.html">
+                        <button class="login">Login</button>
+                    </a>
 
-                        <!-- <div>
-                            <a href="/login.html">
-                                <button class="login">Login</button>
-                            </a>
-                            <a href="/register.html">
-                                <button class="signup">Sign Up</button>
-                            </a>
-                        </div> -->
-                    </div>
-
-                </div>
+                </li>
+                <li><a href="/register.html">
+                        <button class="signup">Sign Up</button>
+                    </a>
+                </li>
             </div>
-        </div>
+
+
+        </ul>
+
+        <ul>
+            <div>
+                <li>
+                    <a href="#"><img src="/assets/logo/logo1.png" alt="logo" width={50} height={50} />
+                        <span class="logo-name">GMIT</span></a>
+                </li>
+            </div>
+            <div class="nav">
+                <li class="hideMobile ">
+                    <a class="active link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="hideMobile">
+                    <a class="link " href="#ourcourses">Our Courses</a>
+                </li>
+
+                <li class="hideMobile">
+                    <a class="link " href="#aboutus">About Us</a>
+                </li>
+                <li class="hideMobile">
+                    <a class="link" href="#offlineservice">Offline Service</a>
+                </li>
+                <li class="hideMobile">
+                    <a class="link" href="./review.html">Review</a>
+                </li>
+                <li class="hideMobile">
+                    <a class="link" href="./helpdesk.html">Help Desk</a>
+                </li>
+                <li class="hideMobile">
+                    <a class="link" href="/mycourses.html">My Courses</a>
+                </li>
+
+                <!-- before login starts  -->
+                <!-- <div class="d-flex">
+                    <li class="hideMobile">
+                        <a href="/login.html">
+                            <button class="login">Login</button>
+                        </a>
+
+                    </li>
+                    <li class="hideMobile">
+                        <a href="/register.html">
+                            <button class="signup">Sign Up</button>
+                        </a>
+                    </li>
+                </div> -->
+                <!-- before login ends  -->
+
+                <!-- after login start  -->
+                <div>
+                    <div class=" dropdown">
+                        <button onclick="activeUser()" class="dropbtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" fill="none">
+                                <circle cx="14.8672" cy="14.0606" r="14.0606" fill="#2D094F" />
+                                <path d="M5.49365 4.68677H24.5328V23.7259H5.49365V4.68677Z" fill="white"
+                                    fill-opacity="0.01" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.0134 7.06658C13.699 7.06658 12.6335 8.13209 12.6335 9.44647C12.6335 10.7609 13.699 11.8264 15.0134 11.8264C16.3277 11.8264 17.3933 10.7609 17.3933 9.44647C17.3933 8.13209 16.3277 7.06658 15.0134 7.06658ZM11.0469 9.44647C11.0469 7.25584 12.8227 5.47998 15.0134 5.47998C17.204 5.47998 18.9799 7.25584 18.9799 9.44647C18.9799 11.6371 17.204 13.413 15.0134 13.413C12.8227 13.413 11.0469 11.6371 11.0469 9.44647Z"
+                                    fill="#D1EDDE" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.08008 22.1395C7.08008 17.7583 10.6318 14.2065 15.0131 14.2065C19.3943 14.2065 22.946 17.7583 22.946 22.1395C22.946 22.5777 22.5909 22.9328 22.1527 22.9328C21.7146 22.9328 21.3594 22.5777 21.3594 22.1395C21.3594 18.6345 18.5181 15.7931 15.0131 15.7931C11.5081 15.7931 8.66667 18.6345 8.66667 22.1395C8.66667 22.5777 8.3115 22.9328 7.87338 22.9328C7.43525 22.9328 7.08008 22.5777 7.08008 22.1395Z"
+                                    fill="#D1EDDE" />
+                            </svg>
+                        </button>
+                        <div id="myDropdown" class="dropdownContent">
+
+                            <li><a class="" href="#">
+                                    <button class="login">Profile</button>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="" href="#">
+                                    <button class="login">Logout</button>
+                                </a>
+                            </li>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- after login ends  -->
+
+                <!-- menu bar  -->
+                <li class="menu-button" onclick=showSidebar()>
+                    <a href="#"><img src="./assets/menu/menu.svg" alt=""></a>
+                </li>
+
+            </div>
+        </ul>
     </nav>
 
     <!-- this is navbar  -->
@@ -112,8 +165,7 @@
         <!----------------
              top bannner section  starts from here
         ------------------>
-        <section class="bannersection">
-
+        <section class="bannersection mb-5">
 
             <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
                 <div class="carousel-inner ">
@@ -165,10 +217,6 @@
 
                 </div>
             </div>
-
-            <div class="secondBanner"></div>
-
-
 
         </section>
 
@@ -699,6 +747,35 @@
     </footer>
 
 
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "flex";
+        }
+
+        function hidesidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "none";
+
+        }
+
+        function activeUser() {
+            var dropdownContent = document.getElementById("myDropdown");
+
+            if (dropdownContent.style.display == "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+        window.onclick = function activeUser(event) {
+            if (event.target.matches('.dropbtn')) {
+                document.getElementById('myDropdown')
+                    .style.display = "block";
+            }
+        }
+
+    </script>
 </body>
 
 </html>
