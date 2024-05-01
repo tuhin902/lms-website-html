@@ -20,3 +20,26 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+
+.right-fixed-button{
+  position: fixed;
+  right: 20px ;
+  bottom: 20px;
+  z-index: 1;
+
+}
+
+.whatsapp {
+  width: 70px;
+  font-size: 20px;
+  background-color: rgb(85, 226, 85);
+  border-radius: 20px;
+}
+
+.messenger {
+  width: 70px;
+  font-size: 20px;
+  background-color: rgb(85, 144, 226);
+  border-radius: 20px;
+}
