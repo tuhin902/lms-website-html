@@ -133,6 +133,11 @@ nav li:first-child {
 .signup:hover {
   background-color: rgba(127, 122, 122, 0.281);
 }
+
+.search {
+  display: flex;
+  align-items: center;
+}
 .search-field {
   display: flex;
   align-items: center;
@@ -163,6 +168,17 @@ nav li:first-child {
     align-items: center;
     gap: 10px;
     margin-bottom: 50px;
+  }
+  .search-input {
+    padding: 5px 20px 5px 10px;
+    border-radius: 10px;
+  }
+  .submit-btn {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #7b287d;
+    color: #fff;
+    font-weight: 700;
   }
 }
 @media only screen and (max-width: 400px) {

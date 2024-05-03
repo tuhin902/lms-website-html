@@ -6,7 +6,7 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
+  background-color: #fff;
 }
 
 /* a {
@@ -21,25 +21,23 @@ body {
   justify-content: space-between;
 }
 
-
-.right-fixed-button{
+.right-fixed-button {
   position: fixed;
-  right: 20px ;
+  right: 20px;
   bottom: 20px;
   z-index: 1;
-
 }
 
 .whatsapp {
-  width: 70px;
-  font-size: 20px;
+  width: 50px;
+  font-size: 15px;
   background-color: rgb(85, 226, 85);
   border-radius: 20px;
 }
 
-.messenger {
-  width: 70px;
-  font-size: 20px;
+/* .phone {
+  width: 50px;
+  font-size: 15px;
   background-color: rgb(85, 144, 226);
   border-radius: 20px;
-}
+} */
