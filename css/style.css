@@ -7,6 +7,7 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff;
+  max-width: 1400px;
 }
 
 /* a {
@@ -14,16 +15,9 @@ body {
   color: inherit;
 } */
 
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .right-fixed-button {
   position: fixed;
-  right: 20px;
+  right: 150px;
   bottom: 20px;
   z-index: 1;
 }
@@ -41,3 +35,12 @@ body {
   background-color: rgb(85, 144, 226);
   border-radius: 20px;
 } */
+
+@media only screen and (max-width: 768px) {
+  .right-fixed-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1;
+  }
+}

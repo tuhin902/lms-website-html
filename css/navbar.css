@@ -10,10 +10,10 @@ nav {
   /* height: 200px; */
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  /* overflow: hidden; */
   z-index: 30;
+  max-width: 1378px;
+  margin: auto;
 }
 
 nav ul {
