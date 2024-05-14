@@ -16,65 +16,148 @@
     <main>
         <section class="container ">
             <div class="payment-container ">
-                <div class="d-flex flex-column  flex-lg-row justify-content-evenly  ">
-                    <div class="bg-white payment-logos ">
-                        <h3 class="">PAYMENT METHODS</h3>
+                <div class="d-flex flex-column justify-content-evenly  flex-lg-row ">
+                    <div class=" w-100 payment-logos d-flex flex-row justify-content-center  ">
                         <div>
-                            <img class="payment-icon" src="./assets/paymenticon/bkash.svg" alt="">
-                            <img class="payment-icon" src="./assets/paymenticon/nagad.png" alt="">
-                            <img class="payment-icon" src="./assets/paymenticon/bkash.svg" alt="">
+                            <h3 class="">PAYMENT METHODS</h3>
+                            <div>
+                                <img class="payment-icon" src="./assets/paymenticon/bkash.svg" alt="">
+                                <img class="payment-icon" src="./assets/paymenticon/nagad.png" alt="">
+                                <img class="payment-icon" src="./assets/paymenticon/bkash.svg" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="bg-white payment-details ">
+                    <div class="w-100  payment-details">
                         <h3 class="text-center">Payment Form</h3>
-                        <div>
-                            <p class="Payment-Information"><u>Payment Information</u></p>
-                            <div class="bkash my-3">
-                                <p class="information">Bkash Information:</p>
-                                <div class="bg-white  py-2 shadow rounded">
-                                    <img src="./assets/paymenticon/bkash.svg" alt="">
-                                    <p class="information ps-2  py-2">Number:+8801890000000</p>
-                                </div>
-                            </div>
-                            <div class="bkash my-3">
-                                <p class="information">Nagad Information:</p>
-                                <div class="bg-white  py-2 shadow rounded">
-                                    <img src="./assets/paymenticon/nagad.png" alt="">
-                                    <p class="information ps-2  py-2">Number:+8801890000000</p>
-                                </div>
-                            </div>
-                            <div class="bkash my-3">
-                                <p class="information">Bank Information:</p>
-                                <div class="bg-white  py-2 shadow rounded">
-                                    <img src="./assets/paymenticon/bkash.svg" alt="">
-                                    <p class="information ps-2  mt-4">Branch Name:Chawkbazar,Chittagong</p>
-                                    <p class="information ps-2  py-2">Account Number:0909090909090909</p>
-                                </div>
-                            </div>
 
-                        </div>
 
                         <div>
-                            <h5 class="transaction-info"><u>Enter your transaction information</u></h3>
-                                <div class="my-3 px-3 py-4 bg-white shadow rounded">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="transaction-number" class="form-label information">Transaction
-                                                Number</label>
-                                            <input type="text" class="form-control" id="transaction-number"
-                                                name="transaction-number">
+                            <label class="fw-semibold information mb-3" for="payment">Payment</label>
+                            <div class="border border-2  mb-5  p-2">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                <label for="" class="fw-semibold information">Bank </label>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>অনুগ্রহ করে প্রথমে আপনার ব্যাংক পেমেন্ট সম্পূর্ণ করুন, তারপর নিচের
+                                                    ফর্মে আপনার ব্যাংক নম্বর এবং লেনদেন ছবি প্রদান করুন।</p>
+                                                <p>ব্যাংক একাউন্ট নাম্বার:00000000000000</p>
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label class="fw-semibold information" for="branch-name">Branch
+                                                            Name:</label>
+                                                        <input type="text" id="bkash-number" name="branch-name"
+                                                            class="w-50 px-2 py-1 d-block border border-2 border-black ">
 
+                                                    </div>
+                                                    <div>
+                                                        <label for="transaction-proved"
+                                                            class="fw-semibold information">Transaction
+                                                            proved:</label>
+                                                        <input type="file" id="transaction-proved"
+                                                            name="transaction-proved"
+                                                            class="w-50 px-2 py-1 d-block border border-2 border-black ">
+                                                    </div>
+                                                    <button type="submit" class="btn mt-2 btn-success">Enroll
+                                                        Now</button>
+                                                </form>
+                                            </div>
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="transaction-prove" class="form-label information">Transaction
-                                                Prove</label>
-                                            <input type="file" class="form-control" id="transaction-prove"
-                                                name="transaction-prove">
-                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                <label for="" class="fw-semibold information">bKash <img
+                                                        src="./assets/paymenticon/bkash.svg" alt=""
+                                                        class="payment-img"></label>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="bkash-details information">
+                                                    <p>অনুগ্রহ করে প্রথমে আপনার বিকাশ পেমেন্ট সম্পূর্ণ করুন, তারপর নিচের
+                                                        ফর্মে আপনার বিকাশ নম্বর এবং লেনদেন আইডি প্রদান করুন।</p>
+                                                    <p>bKash Personal Number: 01307769169</p>
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label class="fw-semibold information"
+                                                                for="bkash-number">bKash
+                                                                Number:</label>
+                                                            <input type="text" id="bkash-number" name="bkash-number"
+                                                                class="w-50 px-2 py-1 d-block border border-2 border-black ">
 
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                    </form>
+                                                        </div>
+                                                        <div>
+                                                            <label for="transaction-id"
+                                                                class="fw-semibold information">Transaction
+                                                                ID:</label>
+                                                            <input type="text" id="transaction-id" name="transaction-id"
+                                                                class="w-50 px-2 py-1 d-block border border-2 border-black ">
+                                                        </div>
+                                                        <button type="submit" class="btn mt-2 btn-success">Enroll
+                                                            Now</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item ">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                <label for="" class="fw-semibold information">Nagad <img
+                                                        src="./assets/paymenticon/nagad.png" alt=""
+                                                        class="payment-img"></label>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="bkash-details">
+                                                    <p class="information">অনুগ্রহ করে প্রথমে আপনার নগদ পেমেন্ট সম্পূর্ণ
+                                                        করুন, তারপর
+                                                        নিচের
+                                                        ফর্মে আপনার নগদ নম্বর এবং লেনদেন আইডি প্রদান করুন।</p>
+                                                    <p class="information">Nagad Personal Number: 01307769169</p>
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label class="fw-semibold information"
+                                                                for="bkash-number">Nagad
+                                                                Number:</label>
+                                                            <input type="text" id="bkash-number" name="bkash-number"
+                                                                class="w-50 px-2 py-1 d-block border border-2 border-black ">
+
+                                                        </div>
+                                                        <div>
+                                                            <label for="transaction-id "
+                                                                class="fw-semibold information">Transaction
+                                                                ID:</label>
+                                                            <input type="text" id="transaction-id" name="transaction-id"
+                                                                class="w-50 px-2 py-1 d-block border border-2 border-black ">
+                                                        </div>
+                                                        <button type="submit" class="btn mt-2 btn-success">Enroll
+                                                            Now</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
+
+                            </div>
+
 
                         </div>
                     </div>

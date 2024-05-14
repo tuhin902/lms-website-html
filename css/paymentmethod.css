@@ -1,9 +1,8 @@
 .payment-container {
   background-color: rgba(240, 237, 237, 0.323);
-  /* height: 100vh; */
-  /* background-color: #fe3063; */
   padding-top: 100px;
   padding-bottom: 100px;
+  height: 100vw;
 }
 
 .payment-icon {
@@ -12,11 +11,7 @@
 }
 
 .payment-logos {
-  padding: 35px;
-  border-radius: 30px;
-  width: 400px;
-  height: 182px;
-  box-shadow: 2px 2px 11px black;
+  padding: 20px;
 }
 .payment-logos h3 {
   color: #fe3063;
@@ -28,15 +23,10 @@
 }
 
 .payment-details {
-  width: 500px;
-  border-radius: 30px;
-  padding: 40px;
-  background-color: #fff;
-  box-shadow: 2px 2px 11px black;
+  padding: 20px;
 }
 
 .payment-details h3 {
-  margin-top: 15px;
   margin-bottom: 50px;
   color: #fe3063;
   font-family: Poppins;
@@ -64,9 +54,9 @@
   line-height: normal;
 }
 
-.bkash img {
-  width: 118px;
-  height: 61px;
+.payment-img {
+  width: 60px;
+  height: 30px;
 }
 
 .transaction-info {
@@ -92,11 +82,7 @@
   }
 
   .payment-logos {
-    padding: 35px;
-    border-radius: 30px;
-    width: 100%;
-    height: 182px;
-    margin-bottom: 20px;
+    padding: 20px;
   }
   .payment-logos h3 {
     color: #fe3063;
@@ -108,15 +94,10 @@
   }
 
   .payment-details {
-    width: 100%;
-    border-radius: 30px;
-    padding: 25px;
-    background-color: #fff;
-    margin: 0px;
+    padding: 20px;
   }
 
   .payment-details h3 {
-    margin-top: 15px;
     margin-bottom: 50px;
     color: #fe3063;
     font-family: Poppins;
@@ -144,9 +125,9 @@
     line-height: normal;
   }
 
-  .bkash img {
-    width: 118px;
-    height: 61px;
+  .payment-img {
+    width: 60px;
+    height: 30px;
   }
 
   .transaction-info {
