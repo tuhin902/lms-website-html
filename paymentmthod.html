@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/paymentmethod.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <title>Payment Method</title>
+</head>
+
+<body>
+
+    <main>
+        <section class="container ">
+            <div class="payment-container ">
+                <div class="d-flex flex-column  flex-lg-row justify-content-evenly  ">
+                    <div class="bg-white payment-logos ">
+                        <h3 class="">PAYMENT METHODS</h3>
+                        <div>
+                            <img class="payment-icon" src="./assets/paymenticon/bkash.svg" alt="">
+                            <img class="payment-icon" src="./assets/paymenticon/nagad.png" alt="">
+                            <img class="payment-icon" src="./assets/paymenticon/bkash.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="bg-white payment-details ">
+                        <h3 class="text-center">Payment Form</h3>
+                        <div>
+                            <p class="Payment-Information"><u>Payment Information</u></p>
+                            <div class="bkash my-3">
+                                <p class="information">Bkash Information:</p>
+                                <div class="bg-white  py-2 shadow rounded">
+                                    <img src="./assets/paymenticon/bkash.svg" alt="">
+                                    <p class="information ps-2  py-2">Number:+8801890000000</p>
+                                </div>
+                            </div>
+                            <div class="bkash my-3">
+                                <p class="information">Nagad Information:</p>
+                                <div class="bg-white  py-2 shadow rounded">
+                                    <img src="./assets/paymenticon/nagad.png" alt="">
+                                    <p class="information ps-2  py-2">Number:+8801890000000</p>
+                                </div>
+                            </div>
+                            <div class="bkash my-3">
+                                <p class="information">Bank Information:</p>
+                                <div class="bg-white  py-2 shadow rounded">
+                                    <img src="./assets/paymenticon/bkash.svg" alt="">
+                                    <p class="information ps-2  mt-4">Branch Name:Chawkbazar,Chittagong</p>
+                                    <p class="information ps-2  py-2">Account Number:0909090909090909</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <h5 class="transaction-info"><u>Enter your transaction information</u></h3>
+                                <div class="my-3 px-3 py-4 bg-white shadow rounded">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="transaction-number" class="form-label information">Transaction
+                                                Number</label>
+                                            <input type="text" class="form-control" id="transaction-number"
+                                                name="transaction-number">
+
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="transaction-prove" class="form-label information">Transaction
+                                                Prove</label>
+                                            <input type="file" class="form-control" id="transaction-prove"
+                                                name="transaction-prove">
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
