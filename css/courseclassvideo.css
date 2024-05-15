@@ -341,8 +341,9 @@
 .videochangebtn {
   display: flex;
   justify-content: end;
-  margin-top: 24px;
+  margin-top: 0;
   gap: 20px;
+
 }
 
 .previousbtn {
