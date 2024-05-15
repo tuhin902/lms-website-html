@@ -1,8 +1,8 @@
 .payment-container {
-  background-color: rgba(240, 237, 237, 0.323);
+  background-color: rgba(223, 220, 220, 0.336);
   padding-top: 100px;
   padding-bottom: 100px;
-  height: 100vw;
+  /* height: 100vw; */
 }
 
 .payment-icon {
@@ -69,6 +69,24 @@
   margin-top: 10px;
 }
 
+.select-form {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(101, 119, 113);
+}
+
+.radio {
+  padding: 10px;
+}
+
+.form-check-input {
+  margin-left: 10px;
+}
+
+.bkash-details {
+  padding: 20px;
+}
+
 @media only screen and (max-width: 800px) {
   .payment-container {
     /* background-color: rgba(240, 237, 237, 0.323); */
@@ -94,7 +112,7 @@
   }
 
   .payment-details {
-    padding: 20px;
+    padding: 5px;
   }
 
   .payment-details h3 {
@@ -138,5 +156,18 @@
     font-weight: 600;
     line-height: normal;
     margin-top: 10px;
+  }
+
+  .radio {
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  .form-check-input {
+    margin-left: 5px;
+  }
+
+  .bkash-details {
+    padding: 15px;
   }
 }
