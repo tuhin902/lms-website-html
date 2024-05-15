@@ -68,29 +68,30 @@
 }
 
 .topline {
-  width: 90vw;
-  margin: auto;
+  /* width: 90vw; */
+  /* margin: auto; */
   height: 2px;
   background: #e4d9ff;
   margin-bottom: 61px;
 }
 
 .coursesection {
-  width: 90vw;
-  margin: auto;
+  /* width: 90vw; */
+  /* margin: auto; */
   display: flex;
   gap: 10px;
 }
 
 .leftside {
   flex: 2;
+  margin-left: 20px;
 }
 
 .rightside {
   flex: 1;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 
 .rightsideinput {
@@ -269,21 +270,22 @@
   }
 
   .coursesection {
-    width: 90vw;
-    margin: auto;
-    display: flex;
-    gap: 10px;
+    /* width: 90vw; */
+    /* margin: auto; */
+    /* display: flex; */
+    /* gap: 10px; */
   }
 
   .leftside {
-    flex: 2;
+    flex: 1;
+    margin-left: 0px;
   }
 
   .rightside {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center; */
   }
 
   .rightsideinput {
@@ -358,6 +360,7 @@
     border-radius: 20px;
     background: rgba(217, 217, 217, 0.2);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 0px;
   }
 
   .extraclasstitle {
@@ -404,8 +407,8 @@
   .topbtn {
     display: flex;
     justify-content: space-between;
-    width: 80vw;
-    margin: auto;
+    /* width: 80vw; */
+    /* margin: auto; */
   }
   .yourcoursebtn {
     width: 111px;
@@ -431,8 +434,8 @@
   }
 
   .coursesection {
-    width: 80vw;
-    margin: auto;
+    /* width: 80vw;
+    margin: auto; */
     display: flex;
     flex-direction: column;
   }
@@ -470,7 +473,7 @@
   }
 
   .allcourses {
-    width: 311px;
+    width: 370px;
     height: 540px;
     margin-top: 17px;
     padding-top: 18px;
@@ -521,24 +524,25 @@
 }
 
 .yourcoursecard {
-  width: 800px;
-  height: 368px;
-  border-radius: 20px;
+  width: 700px;
+  height: 300px;
+  border-radius: 15px;
   background: rgba(217, 217, 217, 0.2);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
-  gap: 48px;
-  padding-left: 26px;
+  gap: 25px;
+  padding-left: 15px;
 }
 
 .cardimg {
-  width: 400px;
-  height: 294px;
+  width: 330px;
+  height: 250px;
 }
 
 .yourcoursecarddetails h2 {
   margin-bottom: 10px;
+  font-size: 25px;
 }
 .yourcoursecarddetails p {
   margin-bottom: 15px;
@@ -648,8 +652,8 @@
 
 @media only screen and (max-width: 768px) {
   .yourcoursecard {
-    width: 311px;
-    height: 304px;
+    width: 370px;
+    height: 350px;
     border-radius: 10px;
     flex-direction: column;
     align-items: center;
@@ -658,8 +662,8 @@
   }
 
   .cardimg {
-    width: 269px;
-    height: 157px;
+    width: 330px;
+    height: 200px;
   }
 
   .yourcoursecarddetails h2 {
@@ -704,7 +708,7 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 22px;
-  padding-top: 5px;
+  padding-top: 15px;
   padding-bottom: 5px;
 }
 
@@ -737,17 +741,17 @@
 
 @media only screen and (max-width: 768px) {
   .coursecard {
-    width: 268px;
+    width: 340px;
     height: 71px;
     padding-left: 22px;
   }
 
   .coursetitle {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .coursevideo {
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 8px;
   }
 

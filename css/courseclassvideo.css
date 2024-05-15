@@ -68,21 +68,22 @@
 }
 
 .topline {
-  width: 90vw;
-  margin: auto;
+  /* width: 90vw; */
+  /* margin: auto; */
   height: 2px;
   background: #e4d9ff;
   margin-bottom: 61px;
 }
 
 .coursesection {
-  width: 90vw;
-  margin: auto;
+  /* width: 90vw;
+  margin: auto; */
   display: flex;
 }
 
 .leftside {
   flex: 2;
+  margin-left: 20px;
 }
 
 .rightside {
@@ -144,8 +145,9 @@
   flex-direction: column;
   /* align-items: center; */
   gap: 55px;
-  width: 90vw;
-  margin: auto;
+  /* width: 90vw;
+  margin: auto; */
+  margin-left: 20px;
 }
 
 .sessiontitle {
@@ -212,8 +214,8 @@
     margin: auto;
   }
   .yourcoursebtn {
-    width: 111px;
-    height: 24px;
+    width: 120px;
+    height: 40px;
     border-radius: 15px 15px 0px 0px;
     font-size: 12px;
     border-top: 1px solid #e4d9ff;
@@ -235,8 +237,8 @@
   }
 
   .coursesection {
-    width: 80vw;
-    margin: auto;
+    /* width: 80vw; */
+    /* margin: auto; */
     display: flex;
     flex-direction: column;
   }
@@ -244,6 +246,7 @@
   .leftside {
     display: flex;
     justify-content: center;
+    margin-left: 0px;
   }
 
   .rightside {
@@ -254,7 +257,7 @@
   }
 
   .rightsideinput {
-    width: 311px;
+    width: 370px;
     height: 35px;
     padding-left: 11px;
     gap: 12px;
@@ -274,7 +277,7 @@
   }
 
   .allcourses {
-    width: 311px;
+    width: 380px;
     height: 540px;
     margin-top: 17px;
     padding-top: 18px;
@@ -285,6 +288,7 @@
     align-items: center;
     gap: 0px;
     width: 100%;
+    margin-left: 0px;
   }
 
   .sessiontitle {
@@ -400,7 +404,7 @@
 
 @media only screen and (max-width: 768px) {
   .video {
-    width: 100%;
+    width: 380px;
     height: 253px;
     position: relative;
   }
@@ -413,14 +417,14 @@
   }
 
   .previousbtn {
-    width: 128px;
-    height: 23px;
-    font-size: 15px;
+    width: 135px;
+    height: 40px;
+    font-size: 18px;
   }
   .nextbtn {
-    width: 128px;
-    height: 23px;
-    font-size: 15px;
+    width: 135px;
+    height: 40px;
+    font-size: 18px;
   }
 }
 
@@ -428,8 +432,6 @@
   width: 297px;
   margin-bottom: 10px;
 }
-
-
 
 .coursetitle {
   font-family: Inter;
@@ -459,7 +461,7 @@
 
 @media only screen and (max-width: 768px) {
   .coursecard {
-    width: 268px;
+    width: 330px;
   }
 
   .coursetitle {
