@@ -21,6 +21,24 @@
   font-weight: 600;
   line-height: normal;
 }
+.course-details {
+  color: #fe3063;
+  font-family: Poppins;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.course-info {
+  font-size: 20px;
+  color: #271563;
+  font-family: Poppins;
+
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 
 .payment-details {
   padding: 20px;

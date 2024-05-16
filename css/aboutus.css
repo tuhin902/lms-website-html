@@ -28,13 +28,27 @@
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  padding: 10px 60px 0 60px;
+  padding: 10px 20px 0 40px;
 }
 
-.topimg {
+
+
+.video {
+  position: relative;
+  width: 800px;
+  height: 472px;
+}
+
+.video iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* .topimg {
   width: 609px;
   height: 374px;
-}
+} */
 
 .topTitle {
   color: #000;
@@ -117,7 +131,7 @@
   margin: 15px 25px 0 27px;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1000px) {
   .aboutTitle {
     color: #000;
     text-align: center;
@@ -146,12 +160,27 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 10px 15px 0 25px;
+    padding: 0px 0px 0 0px;
   }
 
-  .topimg {
+  .videocontainer {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* height: 500px; */
+  }
+
+  .video {
     width: 100%;
-    height: 374px;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .video iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
   }
 
   .topTitle {
@@ -273,10 +302,20 @@
     padding-top: 0px;
   }
 
-  .topimg {
-    width: 350px;
-    height: 190px;
-    margin: auto;
+  .videocontainer {
+    display: flex;
+    justify-content: center;
+  }
+  .btncontainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .video {
+    width: 90vw;
+    height: 230px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .readtopButton {
