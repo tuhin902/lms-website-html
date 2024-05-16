@@ -1,16 +1,20 @@
 .dashboardcontainer {
-  height: 1632px;
+  /* height: 1632px; */
   border-radius: var(--Premitive-premitive-premitive-s, 0px);
   background: #e4d9ff;
 }
 .dashboard {
   display: flex;
+  justify-content: center;
   gap: 30px;
-  width: 90vw;
-  margin: auto;
+  /* width: 90vw; */
+  /* margin: auto; */
   padding-top: 100px;
   padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
+
 .sidebar {
   flex: 1;
   width: 315px;
@@ -23,7 +27,7 @@
 }
 
 .rightcontent {
-  flex: 3;
+  flex: 1;
 }
 
 @media only screen and (max-width: 768px) {
@@ -33,9 +37,11 @@
   .dashboard {
     flex-direction: column;
     gap: 48px;
-    width: 100vw;
-    padding-top: 50px;
+    /* width: 100vw; */
+    padding-top: 30px;
     padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .sidebar {
     width: 100%;
@@ -72,13 +78,14 @@
   align-items: center;
   margin-bottom: 25px;
   color: #000;
-  text-align: center;
   font-family: Kantumruy;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .active {
@@ -87,16 +94,19 @@
   width: 277px;
   height: 57px;
   padding: 15px 13px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .name {
   color: #263238;
   font-family: Kantumruy;
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   margin-bottom: 4px;
+  text-align: center;
 }
 .id {
   color: #263238;
@@ -122,6 +132,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 32px;
+  margin-top: 10px;
 }
 
 .complete p {
@@ -164,6 +175,10 @@
     padding-top: 40px;
     position: relative;
   }
+  .sidebarcontainer {
+    padding-top: 0px;
+    position: relative;
+  }
 
   .profileimg {
     width: 128px;
@@ -196,15 +211,15 @@
   }
 
   .name {
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 4px;
   }
   .id {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
   }
   .number {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 50px;
   }
 
@@ -230,14 +245,14 @@
 
   .pdfbtn {
     width: 163px;
-    height: 30px;
+    height: 40px;
     font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 0px;
-    bottom: -10px;
+    left: 25px;
+    bottom: -25px;
   }
 }
 /* sidebar style ends here  */
@@ -444,7 +459,7 @@
 @media only screen and (max-width: 768px) {
   .myprofilecontainer {
     width: 100%;
-    height: 873px;
+    height: 700px;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 10px;
@@ -707,15 +722,15 @@
     color: #000;
     text-align: center;
     font-family: Kantumruy;
-    font-size: 12px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
 
   .additionalinfoprofileicon {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
   }
 
   .additionalinfoinputcontainer {
@@ -727,9 +742,10 @@
     flex-direction: column;
     gap: 15px;
   }
+
   .selectgender select {
-    width: 309px;
-    height: 30px;
+    width: 340px;
+    height: 40px;
     border-radius: 10px;
     background: #d9d9d9;
     border: none;
@@ -738,12 +754,12 @@
   }
 
   .additionalinfoformtop > div label {
-    font-size: 12px;
+    font-size: 20px;
   }
 
   .additionalinfoformtop > div input {
-    width: 309px;
-    height: 30px;
+    width: 340px;
+    height: 40px;
     border-radius: 10px;
     border: none;
     margin-top: 18px;
@@ -756,30 +772,30 @@
   }
 
   .additionalinfoformmiddle > div label {
-    font-size: 12px;
+    font-size: 20px;
     margin-top: 15px;
   }
 
   .additionalinfoformmiddle > div input {
-    width: 309px;
-    height: 30px;
+    width: 340px;
+    height: 40px;
     border-radius: 10px;
     border: none;
     margin-top: 10px;
   }
 
   .additionalinfobtncontainer {
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .additionalinfochangebtn {
-    width: 90px;
-    height: 25px;
-    font-size: 12px;
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
 
