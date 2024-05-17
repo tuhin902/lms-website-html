@@ -1,5 +1,6 @@
 .offlineservicecontainer {
-  background: #e4d9ff;
+  /* background: #e4d9ff; */
+  background-color: white;
   width: 100%;
 }
 
@@ -105,7 +106,8 @@
 
 @media only screen and (max-width: 768px) {
   .offlineservicecontainer {
-    background: #e4d9ff;
+    /* background: #e4d9ff; */
+    background-color: white;
     width: 100%;
   }
 
@@ -179,9 +181,11 @@
 }
 
 .paidcoursecontainer {
-  width: 95vw;
-  margin: auto;
+  /* width: 100%; */
+  /* margin: auto; */
   margin-top: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .textContainer {

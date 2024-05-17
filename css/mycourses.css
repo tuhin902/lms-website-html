@@ -1,12 +1,11 @@
 .mycoursecontainer {
   width: 100%;
   padding-bottom: 50px;
-  background-image: linear-gradient(133deg, #6c1daa -0.01%, #e4d9ff 136.76%);
-  background: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.25));
+  background-color: #fff;
 }
 
 .welcometext {
-  color: #fff;
+  color: #000;
   text-align: center;
   font-family: Inter;
   font-size: 40px;
@@ -40,7 +39,7 @@
   border-right: 4px solid #e4d9ff;
   border-left: 4px solid #e4d9ff;
   background: rgba(217, 217, 217, 0.16);
-  color: #fff;
+  color: #000;
   text-align: center;
   font-family: Inter;
   font-size: 25px;
@@ -54,7 +53,7 @@
   text-decoration: none;
 }
 .bookmarksbtn {
-  color: #fff;
+  color: #000;
   font-family: Inter;
   font-size: 25px;
   font-style: normal;
@@ -76,25 +75,30 @@
 }
 
 .coursesection {
-  /* width: 90vw; */
-  /* margin: auto; */
+  width: 100%;
+  margin: auto;
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  margin-bottom: 50px;
+  /* gap: 10px; */
 }
 
 .leftside {
-  flex: 2;
-  margin-left: 20px;
+  /* flex: 2; */
+  /* margin-left: 20px; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
-.rightside {
+/* .rightside {
   flex: 1;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: center; */
-}
+  align-items: center;
+} */
 
-.rightsideinput {
+/* .rightsideinput {
   width: 330px;
   height: 46px;
   border-radius: 100px;
@@ -140,15 +144,16 @@
   gap: 8px;
   padding-top: 28px;
   overflow-y: scroll;
-}
+} */
 
 .supportsession {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  gap: 55px;
-  width: 90vw;
-  margin: auto;
+  gap: 35px;
+  /* width: 90vw; */
+  /* margin: auto; */
+  margin-left: 30px;
 }
 
 .sessiontitle {
@@ -158,7 +163,6 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-left: 20px;
 }
 .sessioncontainer {
   width: 840px;
@@ -169,7 +173,7 @@
 }
 
 .extraclasstitle {
-  color: #fff;
+  color: #000;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -195,12 +199,10 @@
   .mycoursecontainer {
     width: 100%;
     padding-bottom: 50px;
-    background-image: linear-gradient(133deg, #6c1daa -0.01%, #e4d9ff 136.76%);
-    background: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.25));
   }
 
   .welcometext {
-    color: #fff;
+    color: #000;
     text-align: center;
     font-family: Inter;
     font-size: 40px;
@@ -234,7 +236,7 @@
     border-right: 4px solid #e4d9ff;
     border-left: 4px solid #e4d9ff;
     background: rgba(217, 217, 217, 0.16);
-    color: #fff;
+    color: #000;
     text-align: center;
     font-family: Inter;
     font-size: 25px;
@@ -248,7 +250,7 @@
     text-decoration: none;
   }
   .bookmarksbtn {
-    color: #fff;
+    color: #000;
     font-family: Inter;
     font-size: 25px;
     font-style: normal;
@@ -270,22 +272,27 @@
   }
 
   .coursesection {
-    /* width: 90vw; */
-    /* margin: auto; */
-    /* display: flex; */
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
     /* gap: 10px; */
   }
 
   .leftside {
-    flex: 1;
-    margin-left: 0px;
+    /* flex: 2; */
+    /* margin-left: 20px; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
 
-  .rightside {
+  /* .rightside {
     flex: 1;
-    /* display: flex;
-    flex-direction: column; */
-    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .rightsideinput {
@@ -334,7 +341,7 @@
     gap: 8px;
     padding-top: 28px;
     overflow-y: scroll;
-  }
+  } */
 
   .supportsession {
     display: flex;
@@ -364,7 +371,7 @@
   }
 
   .extraclasstitle {
-    color: #fff;
+    color: #000;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
@@ -393,7 +400,7 @@
     } */
 
   .welcometext {
-    color: #fff;
+    color: #000;
     width: 242px;
     margin: auto;
     font-size: 16px;
@@ -433,19 +440,26 @@
     margin-bottom: 19px;
   }
 
+  
+
   .coursesection {
-    /* width: 80vw;
-    margin: auto; */
+    width: 100%;
+    margin: auto;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+    /* gap: 10px; */
   }
 
   .leftside {
-    display: flex;
-    justify-content: center;
+    /* flex: 2; */
+    /* margin-left: 20px; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
 
-  .rightside {
+  /* .rightside {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -478,7 +492,7 @@
     margin-top: 17px;
     padding-top: 18px;
     margin-bottom: 10px;
-  }
+  } */
 
   .supportsession {
     align-items: center;
@@ -524,13 +538,14 @@
 }
 
 .yourcoursecard {
-  width: 700px;
+  width: 650px;
   height: 300px;
   border-radius: 15px;
   background: rgba(217, 217, 217, 0.2);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
+  /* justify-content: center; */
   gap: 25px;
   padding-left: 15px;
 }
@@ -713,7 +728,7 @@
 }
 
 .coursetitle {
-  color: #fff;
+  color: #000;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
