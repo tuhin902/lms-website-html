@@ -7,7 +7,6 @@
 
 .desktitlecontainer {
   height: 121px;
-
   background: rgba(217, 217, 217, 0.2);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -55,12 +54,12 @@
   height: 74px;
   flex-shrink: 0;
   border-radius: 100px;
-  background: #d9d9d9;
+  /* background: #d9d9d9; */
   padding-left: 49px;
 }
 
 .psotinput::placeholder {
-  color: #000;
+  color: #8582828f;
   font-family: Kantumruy;
   font-size: 20px;
   font-style: normal;
@@ -463,12 +462,11 @@
   width: 783px;
   height: 57px;
   border-radius: 10px;
-  background: #d9d9d9;
   padding-left: 28px;
-  border: none;
+  border: 1px solid black;
 }
 .newpost input::placeholder {
-  color: #000;
+  color: #8582828f;
   font-family: Kantumruy;
   font-size: 20px;
   font-style: normal;
@@ -480,13 +478,12 @@
   width: 783px;
   height: 158px;
   border-radius: 10px;
-  background: #d9d9d9;
   padding-top: 23px;
   padding-left: 28px;
-  border: none;
+  border: 1px solid black;
 }
 .newpost textarea::placeholder {
-  color: #000;
+  color: #8582828f;
   font-family: Kantumruy;
   font-size: 20px;
   font-style: normal;
@@ -502,7 +499,10 @@
   width: 363px;
   height: 57px;
   flex-shrink: 0;
-  border: none;
+  border: 1px solid black;
+}
+.nameidinput input::placeholder {
+  color: #8582828f;
 }
 
 .creatpostbottom {

@@ -103,19 +103,25 @@
 }
 
 .aboutBottom {
-  margin-top: 80px;
+  /* margin-top: 80px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 72px;
+  gap: 30px;
+  overflow: scroll;
+  width: 80vw;
+  margin: auto;
+  
 }
 
 .aboutCard {
   width: 295px;
-  height: 419px;
+  /* height: 419px; */
   background: #fff;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
   text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
 }
 .bottomcardimg {
   width: 295px;
@@ -245,7 +251,8 @@
 
   .aboutCard {
     width: 295px;
-    height: 419px;
+    /* height: 419px; */
+    padding-bottom: 15px;
     background: #fff;
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
     text-align: center;
@@ -347,7 +354,8 @@
 
   .aboutCard {
     width: 110px;
-    height: 180px;
+    /* height: 180px; */
+    padding-bottom: 15px;
   }
 
   .bottomcardimg {

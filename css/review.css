@@ -15,7 +15,7 @@
 
 .yourfeedback {
   position: absolute;
-  top: 15px;
+  top: -7px;
   right: 32px;
   width: 264px;
   height: 70px;
@@ -44,7 +44,7 @@
   width: 100%;
   height: 294px;
   margin: auto;
-  background: #e4d9ff;
+  background: rgba(217, 217, 217, 0.2);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-top: 47px;
@@ -91,7 +91,7 @@
 }
 
 .cardcontainer {
-  background-color: #e4d9ff;
+  background: rgba(217, 217, 217, 0.2);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -149,7 +149,7 @@
 
 .card {
   width: 295px;
-  height: 332px;
+  height: 332px !important;
   margin: auto;
   border-radius: 20px;
   background: #fff;
@@ -273,7 +273,7 @@
 
 .feedbackcontainer {
   margin-top: 10px;
-  background-color: #e4d9ff;
+  background: rgba(217, 217, 217, 0.2);
 }
 .formcontainer {
   display: flex;
@@ -362,14 +362,29 @@
 
 .ratings {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
 }
-
-.rating {
-  width: 48px;
-  height: 48px;
-  margin-right: 32px;
+.ratings div {
+  display: flex;
+  gap: 15px;
+  color: orange;
 }
+.ratings input {
+  display: none;
+}
+.ratings input + label {
+  font-size: 30px;
+  text-shadow: 1px 1px 0px #000;
+  cursor: pointer;
+}
+.ratings input:checked + label ~ label {
+  color: #838383;
+}
+/* 
+.ratings label:active {
+  transform: scale(0.8);
+  transition: 0.3s ease;
+} */
 
 .rightside {
   display: flex;

@@ -56,6 +56,7 @@
   gap: 50px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 40px;
 }
 
 .leftside {
@@ -157,11 +158,12 @@
 }
 .contentsinfo {
   width: 715px;
-  height: 161px;
+  /* height: 161px; */
   padding-left: 30px;
   padding-right: 30px;
   background: white;
   padding-top: 10px;
+  padding-bottom: 15px;
 }
 .contentinfo {
   display: flex;
@@ -230,12 +232,13 @@
 
 .instructordetails {
   width: 380px;
-  height: 730px;
+  /* height: 730px; */
   margin-top: 50px;
   padding-top: 30px;
   margin-bottom: 20px;
   border-radius: 20px;
   /* background: #e4d9ff; */
+  padding-bottom: 15px;
 
   background: rgba(217, 217, 217, 0.2);
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
@@ -247,6 +250,7 @@
   margin: auto;
   border-radius: 10px;
   background: #fff;
+  margin-bottom: 20px;
 }
 
 .instructortitle {
@@ -465,7 +469,6 @@
   }
   .contentsinfo {
     width: 715px;
-    height: 161px;
     padding-left: 30px;
     padding-right: 30px;
     background: white;
@@ -535,7 +538,7 @@
 
   .instructordetails {
     width: 380px;
-    height: 730px;
+    /* height: 730px; */
     margin-top: 0px;
     padding-top: 30px;
     margin-bottom: 20px;
@@ -886,8 +889,9 @@
   }
 
   .instructordetails {
+    padding-bottom: 15px;
     width: 80vw;
-    height: 750px;
+    /* height: 750px; */
     margin-top: 35px;
     padding-top: 15px;
     margin-bottom: 20px;
